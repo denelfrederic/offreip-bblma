@@ -108,8 +108,7 @@ const CommentTravaillonsNous = () => {
                 Vos enjeux, <span className="text-gradient">notre savoir-faire</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Notre méthode éprouvée en 6 étapes pour une protection optimale 
-                de vos actifs immatériels et une stratégie PI alignée sur vos objectifs business.
+                Six piliers fondamentaux qui définissent notre approche unique de la propriété intellectuelle alignée sur vos objectifs business et vos contraintes.
               </p>
             </div>
           </div>
@@ -123,7 +122,7 @@ const CommentTravaillonsNous = () => {
                 Nos <span className="text-gradient">atouts</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Six piliers fondamentaux qui définissent notre approche unique de la propriété intellectuelle.
+                Six piliers fondamentaux qui définissent notre approche unique de la propriété intellectuelle alignée sur vos objectifs business et vos contraintes.
               </p>
             </div>
             
