@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -7,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 const CommentTravaillonsNous = () => {
+  
   const atouts = [
     {
       title: "Une vision entrepreneuriale",
@@ -39,10 +39,10 @@ const CommentTravaillonsNous = () => {
       <Header />
       <main className="pt-16 lg:pt-20">
         {/* Hero Section */}
-        <section className="hero-gradient py-24">
+        <section className="hero-gradient py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Vos enjeux, <span className="text-gradient">notre savoir-faire</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -53,7 +53,7 @@ const CommentTravaillonsNous = () => {
         </section>
 
         {/* Décideurs Magazine Recognition Section */}
-        <section className="py-16 bg-background/95">
+        <section className="py-12 bg-background/95">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-center text-center">
               <img 
@@ -70,15 +70,15 @@ const CommentTravaillonsNous = () => {
         </section>
 
         {/* Nos Atouts Section */}
-        <section className="py-24 bg-gradient-to-b from-background/95 to-background">
+        <section className="py-16 bg-gradient-to-b from-background/95 to-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Nos <span className="text-gradient">atouts</span>
               </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {atouts.map((atout, index) => (
                 <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
                   <CardHeader>
