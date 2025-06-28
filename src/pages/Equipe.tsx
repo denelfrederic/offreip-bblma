@@ -163,36 +163,6 @@ const Equipe = () => {
             </div>
           </div>
         </section>
-
-        {/* CTA Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-              Prêt à <span className="text-primary">collaborer</span> ?
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Rencontrons-nous pour discuter de vos projets et découvrir 
-              comment notre équipe peut vous accompagner vers le succès.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-primary text-white hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-full"
-                asChild
-              >
-                <Link to="/contact">Prendre rendez-vous</Link>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-full"
-                asChild
-              >
-                <Link to="/savoir-faire">Découvrir notre expertise</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
