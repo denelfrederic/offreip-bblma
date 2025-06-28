@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -111,10 +112,10 @@ const SavoirFaire = () => {
       <Header />
       <main className="pt-16 lg:pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-white">
+        <section className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {/* Logo */}
-            <div className="mb-12">
+            <div className="mb-8">
               <img 
                 src="/lovable-uploads/b3a2e3c4-974b-41e6-869b-ad541300da99.png" 
                 alt="Brand Factory" 
@@ -122,17 +123,17 @@ const SavoirFaire = () => {
               />
             </div>
             
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Nos <span className="text-primary">Expertises IP/IT</span>
             </h1>
           </div>
         </section>
 
         {/* Introduction - Texte raccourci */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-12 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none text-gray-600">
-              <p className="text-lg leading-relaxed mb-6">
+              <p className="text-lg leading-relaxed mb-4">
                 La propriété intellectuelle constitue aujourd'hui un levier stratégique majeur pour les entreprises souhaitant se différencier, innover et créer de la valeur dans un environnement économique de plus en plus concurrentiel.
               </p>
               <p className="leading-relaxed">
@@ -143,17 +144,17 @@ const SavoirFaire = () => {
         </section>
 
         {/* Services Grid */}
-        <section className="py-20 bg-white">
+        <section className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
                 <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
-                  <CardHeader className="pb-4">
+                  <CardHeader className="pb-3">
                     <CardTitle className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">
                       {service.title}
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-4">
+                  <CardContent className="space-y-3">
                     <p className="text-gray-600 text-sm leading-relaxed">
                       {service.description}
                     </p>
@@ -173,10 +174,10 @@ const SavoirFaire = () => {
         </section>
 
         {/* Notre Méthode Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-12 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Notre <span className="text-primary">méthode</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -184,11 +185,11 @@ const SavoirFaire = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {etapes.map((etape, index) => (
                 <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 group">
-                  <CardHeader>
-                    <div className="mb-4">
+                  <CardHeader className="pb-3">
+                    <div className="mb-3">
                       <div className="text-sm text-primary font-semibold">Étape {index + 1}</div>
                       <CardTitle className="text-xl text-gray-900 group-hover:text-primary transition-colors">
                         {etape.title}
@@ -196,7 +197,7 @@ const SavoirFaire = () => {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
+                    <p className="text-gray-600 mb-4 leading-relaxed">
                       {etape.description}
                     </p>
                     <ul className="space-y-2">
