@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { BarChart3, Target, Optimize, DollarSign } from 'lucide-react';
+import { BarChart3, Target, Settings, DollarSign } from 'lucide-react';
 
 const AuditPortefeuilles = () => {
   const objectifs = [
@@ -20,7 +20,7 @@ const AuditPortefeuilles = () => {
       description: "Vérification de la cohérence entre vos droits PI et vos objectifs business."
     },
     {
-      icon: <Optimize className="h-8 w-8 text-primary" />,
+      icon: <Settings className="h-8 w-8 text-primary" />,
       title: "Optimisation des coûts",
       description: "Identification des économies possibles et rationalisation du portefeuille."
     },
