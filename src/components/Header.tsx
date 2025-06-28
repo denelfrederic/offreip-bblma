@@ -8,10 +8,10 @@ const Header = () => {
 
   const navigation = [
     { name: 'ACCUEIL', href: '/' },
-    { name: 'EXPERTISES', href: '/expertises' },
-    { name: 'CABINET', href: '/cabinet' },
+    { name: 'COMMENT TRAVAILLONS-NOUS ?', href: '/comment-travaillons-nous' },
+    { name: 'SAVOIR-FAIRE', href: '/savoir-faire' },
+    { name: 'NOS ATOUTS', href: '/nos-atouts' },
     { name: 'ÉQUIPE', href: '/equipe' },
-    { name: 'ACTUALITÉS', href: '/actualites' },
     { name: 'CONTACT', href: '/contact' },
   ];
 
@@ -31,7 +31,7 @@ const Header = () => {
           </div>
 
           {/* Navigation desktop */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -45,11 +45,6 @@ const Header = () => {
 
           {/* Actions desktop */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-4 text-sm">
-              <span className="text-muted-foreground">FR</span>
-              <span className="text-muted-foreground">-</span>
-              <span className="text-foreground">EN</span>
-            </div>
             <a 
               href="https://linkedin.com" 
               target="_blank" 
@@ -59,10 +54,10 @@ const Header = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <Link
-              to="/espace-client"
+              to="/contact"
               className="bg-primary text-primary-foreground px-4 py-2 rounded text-sm font-medium hover:bg-primary/90 transition-colors"
             >
-              Espace client
+              Nous contacter
             </Link>
           </div>
 
@@ -93,11 +88,11 @@ const Header = () => {
               ))}
               <div className="border-t border-border mt-4 pt-4">
                 <Link
-                  to="/espace-client"
+                  to="/contact"
                   className="block px-3 py-2 text-base font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Espace client
+                  Nous contacter
                 </Link>
               </div>
             </div>

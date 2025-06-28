@@ -1,38 +1,39 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 
 const ExpertisesSection = () => {
   const expertises = [
     {
-      title: "Droit des Sociétés",
-      description: "Création, restructuration, fusion-acquisition, gouvernance d'entreprise et accompagnement juridique des dirigeants.",
-      icon: "🏢"
+      title: "Propriété Intellectuelle",
+      description: "Dépôts, surveillance, audit de portefeuilles et valorisation de vos actifs immatériels.",
+      icon: "🔒"
     },
     {
-      title: "Droit Commercial",
-      description: "Contrats commerciaux, distribution, concurrence déloyale, propriété intellectuelle et litiges commerciaux.",
-      icon: "🤝"
+      title: "RGPD & Cybersécurité",
+      description: "Mise en conformité RGPD, audits de sécurité et accompagnement dans la gestion des données.",
+      icon: "🛡️"
     },
     {
-      title: "Droit du Travail",
-      description: "Relations individuelles et collectives, restructurations, contentieux prud'homal et négociation sociale.",
-      icon: "👥"
+      title: "Contrats & Négociation",
+      description: "Rédaction et négociation de contrats IT, licences et accords de confidentialité.",
+      icon: "📝"
     },
     {
-      title: "Droit Fiscal",
-      description: "Optimisation fiscale, contrôles fiscaux, contentieux fiscal et accompagnement des opérations de croissance.",
-      icon: "📊"
-    },
-    {
-      title: "Droit Immobilier",
-      description: "Transactions immobilières, baux commerciaux, construction et urbanisme, contentieux immobilier.",
-      icon: "🏠"
-    },
-    {
-      title: "Contentieux & Arbitrage",
-      description: "Litiges commerciaux, arbitrage national et international, médiation et résolution alternative des conflits.",
+      title: "Litiges & Contentieux",
+      description: "Résolution de conflits en propriété intellectuelle et accompagnement juridique.",
       icon: "⚖️"
+    },
+    {
+      title: "Projets IT Complexes",
+      description: "Accompagnement juridique des projets informatiques et transformation digitale.",
+      icon: "💻"
+    },
+    {
+      title: "Formation & Conseil",
+      description: "Programmes de formation sur-mesure et conseil stratégique pour vos équipes.",
+      icon: "🎓"
     }
   ];
 
@@ -44,8 +45,8 @@ const ExpertisesSection = () => {
             Nos <span className="text-gradient">Expertises</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Une approche pluridisciplinaire pour répondre à tous vos besoins juridiques 
-            avec l'expertise et la réactivité que méritent vos projets.
+            Une approche complète et spécialisée pour protéger et valoriser 
+            vos actifs immatériels dans l'économie numérique.
           </p>
         </div>
 
@@ -73,9 +74,11 @@ const ExpertisesSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105">
-            Voir toutes nos expertises
-          </button>
+          <Link to="/savoir-faire">
+            <button className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105">
+              Voir tout notre savoir-faire
+            </button>
+          </Link>
         </div>
       </div>
     </section>
