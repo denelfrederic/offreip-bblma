@@ -56,7 +56,7 @@ const Equipe = () => {
     },
     {
       name: "Mariam KADA",
-      title: "Équipe support et juridique",
+      title: "Juriste marque",
       specialties: "Support juridique, Administration",
       description: "Membre de l'équipe support, elle assure le suivi administratif et juridique des dossiers avec rigueur et efficacité.",
       image: "https://www.bblma.com/wp-content/uploads/2020/11/Mariam-KADA-200x300.jpg"
