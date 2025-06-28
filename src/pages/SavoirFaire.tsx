@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -65,18 +64,12 @@ const SavoirFaire = () => {
           </div>
         </section>
 
-        {/* Introduction - Reprise exacte de BBLM */}
+        {/* Introduction - Texte raccourci */}
         <section className="py-16 bg-gradient-to-b from-background/95 to-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-lg leading-relaxed mb-6">
                 La propriété intellectuelle constitue aujourd'hui un levier stratégique majeur pour les entreprises souhaitant se différencier, innover et créer de la valeur dans un environnement économique de plus en plus concurrentiel.
-              </p>
-              <p className="leading-relaxed mb-6">
-                Notre cabinet intervient aux côtés des entreprises, des start-ups aux grands groupes, pour les accompagner dans la protection, la gestion et la valorisation de leurs actifs immatériels : marques, brevets, dessins et modèles, droits d'auteur, savoir-faire, données personnelles et secrets d'affaires.
-              </p>
-              <p className="leading-relaxed mb-6">
-                Nous proposons une approche intégrée combinant expertise juridique pointue et vision business pragmatique, permettant à nos clients de transformer leurs innovations en avantages concurrentiels durables tout en sécurisant leurs investissements en recherche et développement.
               </p>
               <p className="leading-relaxed">
                 Notre équipe pluridisciplinaire maîtrise l'ensemble des problématiques liées à la propriété intellectuelle et aux nouvelles technologies, du conseil stratégique à la résolution de litiges, en passant par l'accompagnement dans les opérations de croissance externe et les négociations contractuelles complexes.
