@@ -27,7 +27,7 @@ const Contact = () => {
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
                 Échangeons sur vos projets et découvrons ensemble 
-                comment nous pouvons vous accompagner vers le succès.
+                comment nous pouvons vous accompagner.
               </p>
             </div>
           </div>
