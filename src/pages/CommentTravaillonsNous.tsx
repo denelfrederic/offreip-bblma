@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -42,6 +43,11 @@ const CommentTravaillonsNous = () => {
         <section className="hero-gradient py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
+              <img 
+                src="/lovable-uploads/90d53e7f-4a9b-48ca-a83e-fd342a1a6d12.png" 
+                alt="Brand Factory" 
+                className="h-20 mx-auto mb-8"
+              />
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Vos enjeux, <span className="text-gradient">notre savoir-faire</span>
               </h1>
