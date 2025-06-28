@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -77,9 +78,12 @@ const Equipe = () => {
         {/* Hero Section avec design épuré */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="mb-4">
-              <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Brand</span>
-              <h1 className="text-4xl sm:text-5xl font-bold text-primary mt-1">Factory</h1>
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/96ac745a-06d4-4215-ac4e-f695fb8db5d0.png" 
+                alt="Brand Factory" 
+                className="h-16 mx-auto mb-4"
+              />
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               <span className="text-primary">Une équipe</span> dédiée et spécialisée
