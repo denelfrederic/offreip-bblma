@@ -84,8 +84,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             <Card className="bg-card/50 backdrop-blur-sm border-border">
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-foreground flex items-center">
-                  <span className="mr-3">📍</span>
+                <CardTitle className="text-xl font-bold text-foreground">
                   Nos bureaux
                 </CardTitle>
               </CardHeader>
@@ -102,8 +101,7 @@ const ContactSection = () => {
 
             <Card className="bg-card/50 backdrop-blur-sm border-border">
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-foreground flex items-center">
-                  <span className="mr-3">📞</span>
+                <CardTitle className="text-xl font-bold text-foreground">
                   Contact direct
                 </CardTitle>
               </CardHeader>
@@ -121,8 +119,7 @@ const ContactSection = () => {
 
             <Card className="bg-primary/10 backdrop-blur-sm border-primary/20">
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-foreground flex items-center">
-                  <span className="mr-3">⚡</span>
+                <CardTitle className="text-xl font-bold text-foreground">
                   Consultation d'urgence
                 </CardTitle>
               </CardHeader>
