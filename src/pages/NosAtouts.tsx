@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -32,6 +31,16 @@ const NosAtouts = () => {
       title: "Droit de la publicité",
       description: "Conseil et accompagnement pour vos campagnes publicitaires et communications commerciales.",
       href: "/nos-atouts/droit-publicite"
+    },
+    {
+      title: "Stratégie Fiscale",
+      description: "Optimisation fiscale et conseil stratégique pour vos actifs immatériels.",
+      href: "/nos-atouts/strategie-fiscale"
+    },
+    {
+      title: "Droit des médias",
+      description: "Accompagnement juridique pour les entreprises du secteur médiatique et de l'audiovisuel.",
+      href: "/nos-atouts/droit-medias"
     }
   ];
 
