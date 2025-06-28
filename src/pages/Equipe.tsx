@@ -105,12 +105,12 @@ const Equipe = () => {
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                       />
                     </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-bold text-gray-900">
+                    <div className="space-y-3">
+                      <h3 className="text-2xl font-bold text-gray-900">
                         {membre.name}
                       </h3>
-                      <p className="text-gray-600 font-medium">{membre.title}</p>
-                      <p className="text-sm text-gray-500 leading-relaxed max-w-xs mx-auto">
+                      <p className="text-gray-600 font-medium text-lg">{membre.title}</p>
+                      <p className="text-gray-500 leading-relaxed max-w-xs mx-auto text-lg">
                         {membre.specialties}
                       </p>
                     </div>
