@@ -16,18 +16,18 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 right-0 w-3/4 h-1/2 bg-gradient-to-tl from-muted/20 to-transparent rounded-tl-[200px]"></div>
       </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Contenu principal */}
           <div>
-            <div className="mb-16">
+            <div className="mb-12">
               <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-tight">
                 Brand
                 <br />
                 <span className="text-gradient text-7xl sm:text-8xl lg:text-9xl">Factory</span>
               </h1>
               
-              <p className="text-2xl sm:text-3xl lg:text-4xl text-foreground font-light mb-16 leading-relaxed">
+              <p className="text-2xl sm:text-3xl lg:text-4xl text-foreground font-light mb-12 leading-relaxed">
                 Solutions en droit de la propriété intellectuelle
               </p>
             </div>
@@ -79,7 +79,7 @@ const HeroSection = () => {
       </div>
 
       {/* Flèche de scroll */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-8 w-8 text-primary" />
       </div>
     </section>
