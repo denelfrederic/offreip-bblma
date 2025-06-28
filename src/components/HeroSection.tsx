@@ -14,8 +14,8 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 right-0 w-3/4 h-1/2 bg-gradient-to-tl from-muted/20 to-transparent rounded-tl-[200px]"></div>
       </div>
       
-      {/* Logo BBLM Avocats en haut à droite */}
-      <div className="absolute top-8 right-8 z-20">
+      {/* Logo BBLM Avocats en haut à gauche */}
+      <div className="absolute top-8 left-8 z-20">
         <img 
           src="/lovable-uploads/273d56e3-01a5-4b73-8eb8-cd3debae106b.png" 
           alt="BBLM Avocats" 
