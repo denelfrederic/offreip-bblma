@@ -70,6 +70,33 @@ const CommentTravaillonsNous = () => {
     }
   ];
 
+  const atouts = [
+    {
+      title: "Une vision entrepreneuriale",
+      description: "Nous comprenons les enjeux business et accompagnons votre développement avec une approche stratégique."
+    },
+    {
+      title: "De l'intelligence dans la gestion des actifs immatériels",
+      description: "Notre expertise nous permet d'optimiser la valorisation et la protection de votre patrimoine intellectuel."
+    },
+    {
+      title: "Des conseils engagés pour permettre d'arbitrer facilement",
+      description: "Nous vous donnons les clés pour prendre les bonnes décisions en toute connaissance de cause."
+    },
+    {
+      title: "Un accompagnement sur mesure",
+      description: "Chaque stratégie est personnalisée selon vos spécificités sectorielles et vos objectifs de croissance."
+    },
+    {
+      title: "Une approche fiscale et corporate",
+      description: "Intégration complète des aspects fiscaux et corporate dans votre stratégie de propriété intellectuelle."
+    },
+    {
+      title: "Une gestion pragmatique pour maîtriser les coûts",
+      description: "Optimisation du rapport coût-efficacité avec une approche transparente et prévisible des investissements."
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -89,9 +116,49 @@ const CommentTravaillonsNous = () => {
           </div>
         </section>
 
-        {/* Étapes Section */}
+        {/* Nos Atouts Section */}
         <section className="py-24 bg-gradient-to-b from-background/95 to-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                Nos <span className="text-gradient">atouts</span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Six piliers fondamentaux qui définissent notre approche unique de la propriété intellectuelle.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+              {atouts.map((atout, index) => (
+                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-foreground group-hover:text-primary transition-colors">
+                      {atout.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {atout.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Étapes Section */}
+        <section className="py-24 bg-gradient-to-b from-background to-background/95">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                Notre <span className="text-gradient">méthode</span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Un processus structuré en 6 étapes pour une approche complète et efficace.
+              </p>
+            </div>
+            
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {etapes.map((etape, index) => (
                 <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
@@ -128,7 +195,7 @@ const CommentTravaillonsNous = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-gradient-to-b from-background to-background/95">
+        <section className="py-24 bg-gradient-to-b from-background/95 to-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
               Prêt à protéger vos <span className="text-gradient">actifs immatériels</span> ?
