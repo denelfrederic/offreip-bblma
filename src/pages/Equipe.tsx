@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -11,7 +12,7 @@ const Equipe = () => {
     {
       name: "Myriam ANGELIER",
       title: "Avocat Associé",
-      specialties: "Propriété intellectuelle, Contrats",
+      specialties: "Spécialiste en droit de la propriété intellectuelle",
       description: "Experte en propriété intellectuelle avec une solide expérience dans l'accompagnement des entreprises pour la protection et la valorisation de leurs actifs immatériels.",
       image: "https://www.bblma.com/wp-content/uploads/2023/06/Myriam-ANGELIER-768x768.webp",
       contactUrl: "https://www.bblma.com/equipe/myriam-angelier/",
@@ -25,6 +26,20 @@ const Equipe = () => {
       image: "https://www.bblma.com/wp-content/uploads/2023/06/Sophie-Bornet-768x768.jpg",
       contactUrl: "https://www.bblma.com/equipe/sophie-bornet/",
       linkedinUrl: "https://www.linkedin.com/in/sophie-b-7203624b/"
+    },
+    {
+      name: "Lise MARTIN",
+      title: "Juriste marque",
+      specialties: "Marques, Dessins et modèles",
+      description: "Experte en marques et dessins & modèles, elle conseille les entreprises dans leurs stratégies de protection et de défense de leurs droits.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/Lise-MARTIN-200x300.jpg"
+    },
+    {
+      name: "Mariam KADA",
+      title: "Juriste marque",
+      specialties: "Support juridique, Administration",
+      description: "Membre de l'équipe support, elle assure le suivi administratif et juridique des dossiers avec rigueur et efficacité.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/Mariam-KADA-200x300.jpg"
     },
     {
       name: "Flore MARCHADOUR",
@@ -41,13 +56,6 @@ const Equipe = () => {
       image: "https://www.bblma.com/wp-content/uploads/2020/11/default-avatar-200x300.jpg"
     },
     {
-      name: "Lise MARTIN",
-      title: "Juriste Marque",
-      specialties: "Marques, Dessins et modèles",
-      description: "Experte en marques et dessins & modèles, elle conseille les entreprises dans leurs stratégies de protection et de défense de leurs droits.",
-      image: "https://www.bblma.com/wp-content/uploads/2020/11/Lise-MARTIN-200x300.jpg"
-    },
-    {
       name: "Sirine ISSAAAD",
       title: "Juriste Marque",
       specialties: "Marques, Propriété intellectuelle",
@@ -55,15 +63,8 @@ const Equipe = () => {
       image: "https://www.bblma.com/wp-content/uploads/2020/11/default-avatar-200x300.jpg"
     },
     {
-      name: "Mariam KADA",
-      title: "Juriste marque",
-      specialties: "Support juridique, Administration",
-      description: "Membre de l'équipe support, elle assure le suivi administratif et juridique des dossiers avec rigueur et efficacité.",
-      image: "https://www.bblma.com/wp-content/uploads/2020/11/Mariam-KADA-200x300.jpg"
-    },
-    {
       name: "Miranda RIUS",
-      title: "Équipe support",
+      title: "Assistante administrative",
       specialties: "Support administratif, Coordination",
       description: "Membre de l'équipe support, elle assure la coordination administrative et le suivi des dossiers clients avec professionnalisme.",
       image: "https://www.bblma.com/wp-content/uploads/2020/11/default-avatar-200x300.jpg"
@@ -71,143 +72,140 @@ const Equipe = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Header />
       <main className="pt-16 lg:pt-20">
-        {/* Hero Section */}
-        <section className="hero-gradient py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
-                Notre <span className="text-gradient">Équipe</span>
-              </h1>
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Une équipe dédiée et spécialisée intervenant en synergie avec les autres pôles du cabinet BBLM Avocats sous notre équipe
-              </p>
+        {/* Hero Section avec design épuré */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="mb-4">
+              <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Brand</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-primary mt-1">Factory</h1>
             </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              <span className="text-primary">Une équipe</span> dédiée et spécialisée
+            </h2>
           </div>
         </section>
 
-        {/* Équipe Grid */}
-        <section className="py-24 bg-gradient-to-b from-background/95 to-background">
+        {/* Équipe Grid - Style moderne épuré */}
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
               {equipe.map((membre, index) => (
-                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
-                  <CardContent className="p-8">
-                    <div className="text-center mb-6">
-                      <div className="w-32 h-32 bg-primary/20 rounded-full mx-auto mb-6 overflow-hidden">
-                        <img 
-                          src={membre.image} 
-                          alt={membre.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors mb-2">
+                <div key={index} className="text-center group">
+                  <div className="mb-8 relative">
+                    <div className="w-48 h-64 bg-gray-100 mx-auto mb-6 overflow-hidden">
+                      <img 
+                        src={membre.image} 
+                        alt={membre.name}
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-bold text-gray-900">
                         {membre.name}
                       </h3>
-                      <p className="text-primary font-semibold mb-2">{membre.title}</p>
-                      <p className="text-sm text-muted-foreground font-medium">{membre.specialties}</p>
+                      <p className="text-gray-600 font-medium">{membre.title}</p>
+                      <p className="text-sm text-gray-500 leading-relaxed max-w-xs mx-auto">
+                        {membre.specialties}
+                      </p>
                     </div>
-                    
-                    <p className="text-muted-foreground leading-relaxed mb-6 text-center">
-                      {membre.description}
-                    </p>
-                    
-                    <div className="flex justify-center space-x-4">
-                      {membre.contactUrl ? (
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
-                          asChild
-                        >
-                          <a href={membre.contactUrl} target="_blank" rel="noopener noreferrer">
-                            <Mail className="h-4 w-4 mr-2" />
-                            Contact
-                          </a>
-                        </Button>
-                      ) : (
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
-                        >
+                  </div>
+                  
+                  <div className="flex justify-center space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {membre.contactUrl ? (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="border-gray-300 text-gray-600 hover:bg-primary hover:text-white hover:border-primary"
+                        asChild
+                      >
+                        <a href={membre.contactUrl} target="_blank" rel="noopener noreferrer">
                           <Mail className="h-4 w-4 mr-2" />
                           Contact
-                        </Button>
-                      )}
-                      {membre.linkedinUrl ? (
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
-                          asChild
-                        >
-                          <a href={membre.linkedinUrl} target="_blank" rel="noopener noreferrer">
-                            <Linkedin className="h-4 w-4 mr-2" />
-                            LinkedIn
-                          </a>
-                        </Button>
-                      ) : (
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
-                        >
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="border-gray-300 text-gray-600 hover:bg-primary hover:text-white hover:border-primary"
+                      >
+                        <Mail className="h-4 w-4 mr-2" />
+                        Contact
+                      </Button>
+                    )}
+                    {membre.linkedinUrl ? (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="border-gray-300 text-gray-600 hover:bg-primary hover:text-white hover:border-primary"
+                        asChild
+                      >
+                        <a href={membre.linkedinUrl} target="_blank" rel="noopener noreferrer">
                           <Linkedin className="h-4 w-4 mr-2" />
                           LinkedIn
-                        </Button>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="border-gray-300 text-gray-600 hover:bg-primary hover:text-white hover:border-primary"
+                      >
+                        <Linkedin className="h-4 w-4 mr-2" />
+                        LinkedIn
+                      </Button>
+                    )}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
         </section>
 
         {/* Valeurs Section */}
-        <section className="py-24 bg-gradient-to-b from-background to-background/95">
+        <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                Nos <span className="text-gradient">Valeurs</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                Nos <span className="text-primary">Valeurs</span>
               </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Ce qui nous guide au quotidien dans notre accompagnement de vos projets.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-3xl">🎯</span>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Excellence</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Excellence</h3>
+                <p className="text-gray-600">
                   Nous visons l'excellence dans chaque mission, avec un niveau d'expertise 
                   et de service à la hauteur de vos enjeux.
                 </p>
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-3xl">🤝</span>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Proximité</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Proximité</h3>
+                <p className="text-gray-600">
                   Une relation de confiance basée sur l'écoute, la transparence 
                   et un accompagnement personnalisé.
                 </p>
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-3xl">⚡</span>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Innovation</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Innovation</h3>
+                <p className="text-gray-600">
                   Toujours à la pointe des évolutions technologiques et réglementaires 
                   pour mieux vous conseiller.
                 </p>
@@ -217,19 +215,19 @@ const Equipe = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-gradient-to-b from-background/95 to-background">
+        <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Prêt à <span className="text-gradient">collaborer</span> ?
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Prêt à <span className="text-primary">collaborer</span> ?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Rencontrons-nous pour discuter de vos projets et découvrir 
               comment notre équipe peut vous accompagner vers le succès.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-full"
+                className="bg-primary text-white hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-full"
                 asChild
               >
                 <Link to="/contact">Prendre rendez-vous</Link>
@@ -237,7 +235,7 @@ const Equipe = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg font-semibold rounded-full"
+                className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-full"
                 asChild
               >
                 <Link to="/savoir-faire">Découvrir notre expertise</Link>
