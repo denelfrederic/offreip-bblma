@@ -9,16 +9,6 @@ const ContactSection = () => {
   return (
     <section className="py-24 bg-gradient-to-b from-background to-background/95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Contactez-<span className="text-gradient">nous</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Prenez rendez-vous pour un premier échange et découvrez comment 
-            nous pouvons vous accompagner dans vos projets.
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Formulaire de contact */}
           <Card className="bg-card/50 backdrop-blur-sm border-border">
