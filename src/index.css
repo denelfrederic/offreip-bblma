@@ -56,6 +56,23 @@
     @apply bg-background text-foreground;
     background: linear-gradient(135deg, #1e3a5f 0%, #2d4a73 100%);
     min-height: 100vh;
+    line-height: 1.7; /* Augmentation de l'interlignage */
+  }
+
+  /* Amélioration de l'espacement des titres */
+  h1, h2, h3, h4, h5, h6 {
+    @apply mb-8; /* Plus d'espace sous les titres */
+    line-height: 1.3; /* Interlignage plus aéré pour les titres */
+  }
+
+  /* Amélioration de l'espacement des paragraphes */
+  p {
+    @apply mb-6; /* Plus d'espace entre les paragraphes */
+  }
+
+  /* Amélioration de l'espacement des sections */
+  section {
+    @apply py-32; /* Augmentation du padding vertical des sections */
   }
 }
 
@@ -74,6 +91,7 @@
 .nav-link {
   position: relative;
   transition: all 0.3s ease;
+  @apply px-4 py-2; /* Ajout de padding pour plus d'espace autour des liens */
 }
 
 .nav-link:hover {
@@ -99,5 +117,15 @@
   background: linear-gradient(90deg, transparent 0%, #fbbf24 50%, transparent 100%);
   height: 1px;
   width: 100%;
-  margin: 3rem 0;
+  margin: 4rem 0; /* Augmentation de l'espacement autour du diviseur */
+}
+
+/* Amélioration de l'espacement des cartes */
+.card-spacing {
+  @apply p-8 m-4; /* Plus d'espacement interne et externe pour les cartes */
+}
+
+/* Amélioration de l'espacement des grilles */
+.grid-spacing {
+  @apply gap-12; /* Augmentation de l'espacement entre les éléments de grille */
 }

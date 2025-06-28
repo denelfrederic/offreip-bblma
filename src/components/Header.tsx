@@ -16,21 +16,21 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12"> {/* Augmentation du padding horizontal */}
+        <div className="flex items-center justify-between h-20 lg:h-24"> {/* Augmentation de la hauteur */}
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img 
                 src="/lovable-uploads/273d56e3-01a5-4b73-8eb8-cd3debae106b.png" 
                 alt="BBLM Avocats" 
-                className="h-8 lg:h-10 w-auto"
+                className="h-10 lg:h-12 w-auto" /* Légère augmentation de la taille du logo */
               />
             </Link>
           </div>
 
           {/* Navigation desktop */}
-          <nav className="hidden lg:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-8"> {/* Augmentation de l'espacement entre les liens */}
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -43,18 +43,18 @@ const Header = () => {
           </nav>
 
           {/* Actions desktop */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-6"> {/* Augmentation de l'espacement */}
             <a 
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors p-2" /* Ajout de padding */
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <Link
               to="/contact"
-              className="bg-primary text-primary-foreground px-4 py-2 rounded text-sm font-medium hover:bg-primary/90 transition-colors"
+              className="bg-primary text-primary-foreground px-6 py-3 rounded text-sm font-medium hover:bg-primary/90 transition-colors" /* Augmentation du padding */
             >
               Nous contacter
             </Link>
@@ -64,7 +64,7 @@ const Header = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors p-2" /* Ajout de padding */
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -74,21 +74,21 @@ const Header = () => {
         {/* Menu mobile ouvert */}
         {isMenuOpen && (
           <div className="lg:hidden bg-background border-t border-border">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-4 pt-4 pb-6 space-y-3"> {/* Augmentation de l'espacement */}
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                  className="block px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors" /* Augmentation du padding */
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="border-t border-border mt-4 pt-4">
+              <div className="border-t border-border mt-6 pt-6"> {/* Augmentation de l'espacement */}
                 <Link
                   to="/contact"
-                  className="block px-3 py-2 text-base font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-center"
+                  className="block px-4 py-3 text-base font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-center" /* Augmentation du padding */
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Nous contacter

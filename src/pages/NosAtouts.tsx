@@ -37,12 +37,12 @@ const NosAtouts = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="pt-16 lg:pt-20">
+      <main className="pt-20 lg:pt-24"> {/* Ajustement pour la nouvelle hauteur du header */}
         {/* Hero Section */}
-        <section className="hero-gradient py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="hero-gradient py-32"> {/* Augmentation du padding vertical */}
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12"> {/* Augmentation du padding horizontal */}
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-12"> {/* Augmentation de la marge inférieure */}
                 Nos <span className="text-gradient">Atouts</span> pour projets complexes
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -54,15 +54,15 @@ const NosAtouts = () => {
         </section>
 
         {/* Introduction */}
-        <section className="py-16 bg-gradient-to-b from-background/95 to-background">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 bg-gradient-to-b from-background/95 to-background"> {/* Augmentation du padding */}
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12"> {/* Augmentation du padding horizontal */}
             <div className="prose prose-lg max-w-none text-muted-foreground">
-              <p className="text-lg leading-relaxed mb-6">
+              <p className="text-lg leading-relaxed mb-8"> {/* Augmentation de la marge inférieure */}
                 Dans un environnement économique en constante évolution, les projets complexes nécessitent 
                 une approche juridique sophistiquée et une compréhension fine des enjeux technologiques 
                 et commerciaux.
               </p>
-              <p className="leading-relaxed mb-6">
+              <p className="leading-relaxed mb-8"> {/* Augmentation de la marge inférieure */}
                 Notre cabinet s'est spécialisé dans l'accompagnement de projets à fort enjeu stratégique, 
                 alliant expertise juridique pointue et vision business pragmatique pour vous permettre 
                 de concrétiser vos ambitions en toute sécurité.
@@ -77,29 +77,29 @@ const NosAtouts = () => {
         </section>
 
         {/* Atouts Grid */}
-        <section className="py-24 bg-gradient-to-b from-background to-background/95">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <section className="py-32 bg-gradient-to-b from-background to-background/95"> {/* Augmentation du padding */}
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12"> {/* Augmentation du padding horizontal */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16"> {/* Augmentation de l'espacement entre les cartes */}
               {atouts.map((atout, index) => (
                 <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
-                  <CardHeader>
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                        <span className="text-3xl">{atout.icon}</span>
+                  <CardHeader className="p-8"> {/* Augmentation du padding */}
+                    <div className="flex items-center space-x-6 mb-6"> {/* Augmentation de l'espacement */}
+                      <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center group-hover:bg-primary/30 transition-colors"> {/* Augmentation de la taille */}
+                        <span className="text-4xl">{atout.icon}</span> {/* Augmentation de la taille de l'icône */}
                       </div>
                       <CardTitle className="text-2xl text-foreground group-hover:text-primary transition-colors">
                         {atout.title}
                       </CardTitle>
                     </div>
                   </CardHeader>
-                  <CardContent className="space-y-6">
+                  <CardContent className="space-y-8 p-8"> {/* Augmentation de l'espacement et du padding */}
                     <p className="text-muted-foreground leading-relaxed">
                       {atout.description}
                     </p>
                     <Button 
                       size="lg" 
                       variant="outline" 
-                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground py-4" /* Augmentation du padding vertical */
                       asChild
                     >
                       <Link to={atout.href}>Découvrir en détail</Link>
@@ -112,43 +112,43 @@ const NosAtouts = () => {
         </section>
 
         {/* Pourquoi nous choisir */}
-        <section className="py-24 bg-gradient-to-b from-background/95 to-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+        <section className="py-32 bg-gradient-to-b from-background/95 to-background"> {/* Augmentation du padding */}
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12"> {/* Augmentation du padding horizontal */}
+            <div className="text-center mb-20"> {/* Augmentation de la marge inférieure */}
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8"> {/* Augmentation de la marge inférieure */}
                 Pourquoi nous <span className="text-gradient">choisir</span> ?
               </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">🎯</span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12"> {/* Augmentation de l'espacement */}
+              <div className="text-center p-6"> {/* Ajout de padding */}
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-8"> {/* Augmentation de la taille et de la marge */}
+                  <span className="text-4xl">🎯</span> {/* Augmentation de la taille */}
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Expertise technique</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-bold text-foreground mb-6">Expertise technique</h3> {/* Augmentation de la marge */}
+                <p className="text-muted-foreground leading-relaxed">
                   Maîtrise approfondie des technologies et des enjeux juridiques spécifiques 
                   à chaque secteur d'activité.
                 </p>
               </div>
               
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">⚡</span>
+              <div className="text-center p-6"> {/* Ajout de padding */}
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-8"> {/* Augmentation de la taille et de la marge */}
+                  <span className="text-4xl">⚡</span> {/* Augmentation de la taille */}
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Réactivité</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-bold text-foreground mb-6">Réactivité</h3> {/* Augmentation de la marge */}
+                <p className="text-muted-foreground leading-relaxed">
                   Équipe dédiée et processus optimisés pour répondre rapidement 
                   aux urgences et aux échéances critiques.
                 </p>
               </div>
               
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">🤝</span>
+              <div className="text-center p-6"> {/* Ajout de padding */}
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-8"> {/* Augmentation de la taille et de la marge */}
+                  <span className="text-4xl">🤝</span> {/* Augmentation de la taille */}
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Approche partenariale</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-bold text-foreground mb-6">Approche partenariale</h3> {/* Augmentation de la marge */}
+                <p className="text-muted-foreground leading-relaxed">
                   Relation de confiance durable et accompagnement personnalisé 
                   tout au long de vos projets.
                 </p>
@@ -158,19 +158,19 @@ const NosAtouts = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-gradient-to-b from-background to-background/95">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+        <section className="py-32 bg-gradient-to-b from-background to-background/95"> {/* Augmentation du padding */}
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center"> {/* Augmentation du padding horizontal */}
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8"> {/* Augmentation de la marge */}
               Un projet <span className="text-gradient">complexe</span> en vue ?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-12 leading-relaxed"> {/* Augmentation de la marge */}
               Échangeons sur vos défis et découvrons ensemble comment notre expertise 
               peut vous aider à les relever avec succès.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center"> {/* Augmentation de l'espacement */}
               <Button 
                 size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-full"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-5 text-lg font-semibold rounded-full" /* Augmentation du padding */
                 asChild
               >
                 <Link to="/contact">Discuter de votre projet</Link>
@@ -178,7 +178,7 @@ const NosAtouts = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg font-semibold rounded-full"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-5 text-lg font-semibold rounded-full" /* Augmentation du padding */
                 asChild
               >
                 <Link to="/equipe">Rencontrer l'équipe</Link>
