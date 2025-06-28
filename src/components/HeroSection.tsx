@@ -31,23 +31,14 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Section de spécialités remplaçant le logo */}
+          {/* Section mission simplifiée */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="bg-gradient-to-br from-muted/20 to-muted/10 rounded-3xl p-12 backdrop-blur-sm border border-muted/30 shadow-2xl">
-                <div className="space-y-4">
-                  <h2 className="text-2xl font-bold text-foreground mb-8">
-                    Notre mission,<br />
-                    <span className="text-gradient">protéger votre singularité</span>
-                  </h2>
-                  <div className="space-y-3 text-lg text-foreground/90">
-                    <div>Droits d'auteur</div>
-                    <div>Dessins et modèles</div>
-                    <div>Dénominations sociales</div>
-                    <div>Noms de domaine</div>
-                    <div>Actifs immatériels</div>
-                  </div>
-                </div>
+                <h2 className="text-2xl font-bold text-foreground">
+                  Notre mission,<br />
+                  <span className="text-gradient">protéger votre singularité</span>
+                </h2>
               </div>
               
               {/* Éléments décoratifs subtils */}
