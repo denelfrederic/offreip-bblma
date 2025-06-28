@@ -1,8 +1,6 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -30,24 +28,6 @@ const HeroSection = () => {
               <p className="text-2xl sm:text-3xl lg:text-4xl text-foreground font-light mb-12 leading-relaxed">
                 Solutions en droit de la propriété intellectuelle
               </p>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-8">
-              <Button 
-                size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-8 text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                asChild
-              >
-                <Link to="/savoir-faire">Découvrir nos services</Link>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-2 border-foreground/20 text-foreground hover:bg-foreground/10 hover:border-primary px-12 py-8 text-xl font-semibold rounded-full transition-all duration-300"
-                asChild
-              >
-                <Link to="/contact">Nous contacter</Link>
-              </Button>
             </div>
           </div>
 
