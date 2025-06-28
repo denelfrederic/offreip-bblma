@@ -79,7 +79,7 @@ const CommentTravaillonsNous = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
-                Comment <span className="text-gradient">travaillons-nous</span> ?
+                Vos enjeux, <span className="text-gradient">notre savoir-faire</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
                 Notre méthode éprouvée en 6 étapes pour une protection optimale 
