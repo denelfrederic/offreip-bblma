@@ -10,7 +10,6 @@ const CommentTravaillonsNous = () => {
     {
       title: "Étude préliminaire",
       description: "Analyse de votre contexte et de vos besoins spécifiques pour définir la stratégie optimale.",
-      icon: "🔍",
       details: [
         "Audit de votre situation actuelle",
         "Identification des enjeux prioritaires",
@@ -20,7 +19,6 @@ const CommentTravaillonsNous = () => {
     {
       title: "Audit approfondi",
       description: "Diagnostic complet de vos actifs immatériels et de votre niveau de protection.",
-      icon: "📊",
       details: [
         "Cartographie de vos actifs",
         "Analyse des risques et opportunités",
@@ -30,7 +28,6 @@ const CommentTravaillonsNous = () => {
     {
       title: "Plan d'action personnalisé",
       description: "Élaboration d'une feuille de route sur-mesure avec priorités et échéances.",
-      icon: "📋",
       details: [
         "Stratégie de protection adaptée",
         "Planning de mise en œuvre détaillé",
@@ -40,7 +37,6 @@ const CommentTravaillonsNous = () => {
     {
       title: "Mise en œuvre",
       description: "Exécution rigoureuse des actions définies avec accompagnement continu.",
-      icon: "⚡",
       details: [
         "Dépôts et formalités administratives",
         "Négociation et rédaction contractuelle",
@@ -50,7 +46,6 @@ const CommentTravaillonsNous = () => {
     {
       title: "Suivi et optimisation",
       description: "Surveillance active et ajustements réguliers pour maximiser la protection.",
-      icon: "📈",
       details: [
         "Veille concurrentielle et technologique",
         "Renouvellements et maintenances",
@@ -60,7 +55,6 @@ const CommentTravaillonsNous = () => {
     {
       title: "Accompagnement long terme",
       description: "Relation de confiance durable pour faire évoluer votre stratégie PI.",
-      icon: "🤝",
       details: [
         "Conseil stratégique continu",
         "Adaptation aux évolutions réglementaires",
@@ -159,16 +153,11 @@ const CommentTravaillonsNous = () => {
               {etapes.map((etape, index) => (
                 <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
                   <CardHeader>
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                        <span className="text-3xl">{etape.icon}</span>
-                      </div>
-                      <div className="flex-1">
-                        <div className="text-sm text-primary font-semibold">Étape {index + 1}</div>
-                        <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
-                          {etape.title}
-                        </CardTitle>
-                      </div>
+                    <div className="mb-4">
+                      <div className="text-sm text-primary font-semibold">Étape {index + 1}</div>
+                      <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
+                        {etape.title}
+                      </CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
