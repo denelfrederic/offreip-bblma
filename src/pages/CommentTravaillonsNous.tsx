@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { Quote } from 'lucide-react';
 
 const CommentTravaillonsNous = () => {
   
@@ -32,6 +33,25 @@ const CommentTravaillonsNous = () => {
     {
       title: "Une gestion pragmatique pour maîtriser les coûts",
       description: "Optimisation du rapport coût-efficacité avec une approche transparente et prévisible des investissements."
+    }
+  ];
+
+  const temoignages = [
+    {
+      contenu: "Une vraie personne de confiance qui gère nos dossiers avec une main de maître. ne se pose plus de question, les dossiers sont suivis jusqu'au bout.",
+      secteur: "CEO, Secteur Automobile"
+    },
+    {
+      contenu: "Un conseil maîtrisant la langue anglaise pour un gain de temps, une compréhension immédiate des dossiers et une rapidité d'exécution qui constituent pour nous aujourd'hui un véritable atout.",
+      secteur: "Directeur, Secteur International"
+    },
+    {
+      contenu: "Particulièrement efficace et d'une réactivité sans faille, elle assure un suivi très minutieux. Le cabinet est toujours là pour tous nos dossiers. Une véritable valeur ajoutée.",
+      secteur: "Client Corporate"
+    },
+    {
+      contenu: "Nous accompagne toujours sur nos questions de dépôts et de création de marques en France et en Europe et sur tous les problèmes inhérents à ces sujets.",
+      secteur: "Secteur Innovation"
     }
   ];
 
@@ -96,6 +116,40 @@ const CommentTravaillonsNous = () => {
                     <p className="text-muted-foreground leading-relaxed">
                       {atout.description}
                     </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section Témoignages */}
+        <section className="py-16 bg-gradient-to-b from-background to-background/95">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                Nos <span className="text-gradient">références</span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                La confiance de nos clients témoigne de notre engagement et de notre expertise.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {temoignages.map((temoignage, index) => (
+                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300">
+                  <CardContent className="p-8">
+                    <div className="flex items-start space-x-4">
+                      <Quote className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="text-muted-foreground leading-relaxed italic mb-4">
+                          "{temoignage.contenu}"
+                        </p>
+                        <p className="text-sm font-medium text-primary">
+                          {temoignage.secteur}
+                        </p>
+                      </div>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
