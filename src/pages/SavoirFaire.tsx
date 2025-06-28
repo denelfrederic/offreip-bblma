@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -85,7 +83,7 @@ const SavoirFaire = () => {
       details: [
         "Dépôts et formalités administratives",
         "Négociation et rédaction contractuelle",
-        "Formation de vos équipes"
+        "Intégration base de données Brand Factory"
       ]
     },
     {
@@ -222,4 +220,3 @@ const SavoirFaire = () => {
 };
 
 export default SavoirFaire;
-
