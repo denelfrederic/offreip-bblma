@@ -44,7 +44,7 @@ const NosAtouts = () => {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-12">
-                Nos <span className="text-gradient">Atouts</span> pour projets complexes
+                La complémentatrité des différentes <span className="text-gradient">expertises</span> du cabinet BBLM Avocats nous permet de vous accompagner sur des projets complexes
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
                 Une expertise pointue et des solutions innovantes pour accompagner 
