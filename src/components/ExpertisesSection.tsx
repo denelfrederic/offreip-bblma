@@ -11,7 +11,7 @@ const ExpertisesSection = () => {
     },
     {
       title: "RGPD & Cybersécurité",
-      description: "Mise en conformité RGPD, audits de sécurité et accompagnement dans la gestion des données.",
+      description: "Audit et mise en conformité RGPD, gestion de portefeuille de noms de domaine, validation et l'audit de contenus au regard des règlementations en vigueur.",
       color: "from-blue-500/20 to-blue-500/10"
     },
     {
