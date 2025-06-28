@@ -16,7 +16,7 @@ const ExpertisesSection = () => {
     },
     {
       title: "Contrats, Négociation et Valorisation",
-      description: "Rédaction et négociation de contrats IT, licences et accords de confidentialité.",
+      description: "Analyse, rédaction et négociation de contrats, d'accord, de cession, de transfert, de confidentialité et tous contrats pour la gestion et la sécurisation des actifs immatériels en France et à l'étranger.",
       color: "from-green-500/20 to-green-500/10"
     },
     {
