@@ -13,7 +13,9 @@ const Equipe = () => {
       title: "Avocat Associé",
       specialties: "Propriété intellectuelle, Contrats",
       description: "Experte en propriété intellectuelle avec une solide expérience dans l'accompagnement des entreprises pour la protection et la valorisation de leurs actifs immatériels.",
-      image: "https://www.bblma.com/wp-content/uploads/2020/11/Myriam-ANGELIER-200x300.jpg"
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/Myriam-ANGELIER-200x300.jpg",
+      contactUrl: "https://www.bblma.com/equipe/myriam-angelier/",
+      linkedinUrl: "https://www.linkedin.com/in/myriam-angelier-59408a19/"
     },
     {
       name: "Sophie BORNET",
@@ -99,22 +101,50 @@ const Equipe = () => {
                     </p>
                     
                     <div className="flex justify-center space-x-4">
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
-                      >
-                        <Mail className="h-4 w-4 mr-2" />
-                        Contact
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
-                      >
-                        <Linkedin className="h-4 w-4 mr-2" />
-                        LinkedIn
-                      </Button>
+                      {membre.contactUrl ? (
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
+                          asChild
+                        >
+                          <a href={membre.contactUrl} target="_blank" rel="noopener noreferrer">
+                            <Mail className="h-4 w-4 mr-2" />
+                            Contact
+                          </a>
+                        </Button>
+                      ) : (
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
+                        >
+                          <Mail className="h-4 w-4 mr-2" />
+                          Contact
+                        </Button>
+                      )}
+                      {membre.linkedinUrl ? (
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
+                          asChild
+                        >
+                          <a href={membre.linkedinUrl} target="_blank" rel="noopener noreferrer">
+                            <Linkedin className="h-4 w-4 mr-2" />
+                            LinkedIn
+                          </a>
+                        </Button>
+                      ) : (
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
+                        >
+                          <Linkedin className="h-4 w-4 mr-2" />
+                          LinkedIn
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
