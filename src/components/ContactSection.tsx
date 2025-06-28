@@ -79,11 +79,23 @@ const ContactSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4 text-muted-foreground">
+                <div className="space-y-6 text-muted-foreground">
                   <div>
-                    <p className="font-semibold text-foreground">Paris</p>
-                    <p>123 Avenue des Champs-Élysées</p>
+                    <p className="font-semibold text-foreground mb-2">Paris</p>
+                    <p>19 rue de Courcelles</p>
                     <p>75008 Paris</p>
+                  </div>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground mb-2">Lyon</p>
+                    <p>10-12 rue André Bonin</p>
+                    <p>69004 Lyon</p>
+                  </div>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground mb-2">Nice</p>
+                    <p>23 avenue Thiers</p>
+                    <p>06000 Nice</p>
                   </div>
                 </div>
               </CardContent>
@@ -97,7 +109,7 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-2 text-muted-foreground">
-                  <p><span className="font-semibold text-foreground">Téléphone :</span> +33 (0)1 23 45 67 89</p>
+                  <p><span className="font-semibold text-foreground">Téléphone :</span> +33 (0)1 84 25 52 42</p>
                   <p><span className="font-semibold text-foreground">Email :</span> contact@bblma.com</p>
                   <p className="text-sm mt-4">
                     Du lundi au vendredi<br />
