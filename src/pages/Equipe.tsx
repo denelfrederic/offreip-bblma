@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -43,14 +42,14 @@ const Equipe = () => {
     },
     {
       name: "Lise MARTIN",
-      title: "Conseil",
+      title: "Juriste Marque",
       specialties: "Marques, Dessins et modèles",
       description: "Experte en marques et dessins & modèles, elle conseille les entreprises dans leurs stratégies de protection et de défense de leurs droits.",
       image: "https://www.bblma.com/wp-content/uploads/2020/11/Lise-MARTIN-200x300.jpg"
     },
     {
       name: "Margaux EMPINET",
-      title: "Conseil",
+      title: "Juriste Marque",
       specialties: "Propriété intellectuelle, Contentieux",
       description: "Spécialisée dans le contentieux de propriété intellectuelle, elle défend les intérêts des clients dans leurs litiges et négociations.",
       image: "https://www.bblma.com/wp-content/uploads/2020/11/Margaux-EMPINET-200x300.jpg"
@@ -61,6 +60,13 @@ const Equipe = () => {
       specialties: "Support juridique, Administration",
       description: "Membre de l'équipe support, elle assure le suivi administratif et juridique des dossiers avec rigueur et efficacité.",
       image: "https://www.bblma.com/wp-content/uploads/2020/11/Mariam-KADA-200x300.jpg"
+    },
+    {
+      name: "Miranda RIUS",
+      title: "Équipe support",
+      specialties: "Support administratif, Coordination",
+      description: "Membre de l'équipe support, elle assure la coordination administrative et le suivi des dossiers clients avec professionnalisme.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/default-avatar-200x300.jpg"
     }
   ];
 
