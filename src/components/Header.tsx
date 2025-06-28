@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Linkedin } from 'lucide-react';
@@ -10,7 +11,7 @@ const Header = () => {
     { name: 'ÉQUIPE', href: '/equipe' },
     { name: 'VOS ENJEUX, NOTRE SAVOIR-FAIRE', href: '/comment-travaillons-nous' },
     { name: 'EXPERTISES', href: '/savoir-faire' },
-    { name: 'NOS ATOUTS', href: '/nos-atouts' },
+    { name: 'PROJETS COMPLEXES', href: '/nos-atouts' },
     { name: 'CONTACT', href: '/contact' },
   ];
 
