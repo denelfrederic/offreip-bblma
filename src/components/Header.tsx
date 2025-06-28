@@ -9,7 +9,7 @@ const Header = () => {
     { name: 'ACCUEIL', href: '/' },
     { name: 'ÉQUIPE', href: '/equipe' },
     { name: 'VOS ENJEUX, NOTRE SAVOIR-FAIRE', href: '/comment-travaillons-nous' },
-    { name: 'SAVOIR-FAIRE', href: '/savoir-faire' },
+    { name: 'EXPERTISES', href: '/savoir-faire' },
     { name: 'NOS ATOUTS', href: '/nos-atouts' },
     { name: 'CONTACT', href: '/contact' },
   ];
