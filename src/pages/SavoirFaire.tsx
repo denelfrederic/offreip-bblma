@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -9,7 +8,7 @@ import { Link } from 'react-router-dom';
 const SavoirFaire = () => {
   const services = [
     {
-      title: "Recherche d'antériorité",
+      title: "Recherches d'antériorités",
       description: "Analyses préalables approfondies pour sécuriser vos innovations.",
       href: "/savoir-faire/recherche-anteriorite"
     },

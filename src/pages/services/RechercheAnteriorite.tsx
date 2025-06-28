@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -42,7 +41,7 @@ const RechercheAnteriorite = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
-                Recherche <span className="text-gradient">d'antériorités</span>
+                Recherches <span className="text-gradient">d'antériorités</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
                 Sécurisez vos innovations grâce à nos analyses préalables approfondies. 
@@ -57,8 +56,8 @@ const RechercheAnteriorite = () => {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-lg leading-relaxed mb-6">
-                Avant tout dépôt de marque, brevet ou dessin et modèle, une recherche d'antériorités approfondie 
-                s'avère indispensable pour évaluer les risques de contrefaçon et optimiser votre stratégie de protection.
+                Avant tout dépôt de marque, brevet ou dessin et modèle, des recherches d'antériorités approfondies 
+                s'avèrent indispensables pour évaluer les risques de contrefaçon et optimiser votre stratégie de protection.
               </p>
               <p className="leading-relaxed mb-6">
                 Notre équipe d'experts réalise des analyses documentaires complètes dans les bases de données 
@@ -107,7 +106,7 @@ const RechercheAnteriorite = () => {
         <section className="py-16 bg-gradient-to-b from-background/95 to-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12 text-center">
-              Pourquoi faire une recherche <span className="text-gradient">d'antériorités</span> ?
+              Pourquoi faire des recherches <span className="text-gradient">d'antériorités</span> ?
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -128,7 +127,7 @@ const RechercheAnteriorite = () => {
               Sécurisez votre <span className="text-gradient">innovation</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Contactez-nous pour une analyse personnalisée de vos besoins en recherche d'antériorités.
+              Contactez-nous pour une analyse personnalisée de vos besoins en recherches d'antériorités.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
