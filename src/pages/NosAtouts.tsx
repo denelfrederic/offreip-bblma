@@ -40,16 +40,12 @@ const NosAtouts = () => {
       <Header />
       <main className="pt-20 lg:pt-24">
         {/* Hero Section */}
-        <section className="hero-gradient py-32">
+        <section className="hero-gradient py-16">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-12">
                 La complémentatrité des différentes <span className="text-gradient">expertises</span> du cabinet BBLM Avocats nous permet de vous accompagner sur des projets complexes
               </h1>
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Une expertise pointue et des solutions innovantes pour accompagner 
-                vos projets les plus ambitieux et stratégiques.
-              </p>
             </div>
           </div>
         </section>
