@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -103,6 +104,23 @@ const CommentTravaillonsNous = () => {
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
                 Six piliers fondamentaux qui définissent notre approche unique de la propriété intellectuelle alignée sur vos objectifs business et vos contraintes.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Décideurs Magazine Recognition Section */}
+        <section className="py-16 bg-background/95">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center justify-center text-center">
+              <img 
+                src="/lovable-uploads/2d39cafb-12a8-4d25-8d92-640a3b95b0b9.png" 
+                alt="Décideurs Magazine" 
+                className="h-16 mb-6"
+              />
+              <div className="text-2xl font-bold text-primary mb-2">2025</div>
+              <p className="text-lg text-foreground font-semibold">
+                "Excellent" en gestion de portefeuilles de marques, dessins et modèles
               </p>
             </div>
           </div>
