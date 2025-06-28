@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -67,28 +66,23 @@ const NosAtouts = () => {
         </section>
 
         {/* Introduction */}
-        <section className="py-24 bg-gradient-to-b from-background/95 to-background">
+        <section className="py-16 bg-gradient-to-b from-background/95 to-background">
           <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="prose prose-lg max-w-none text-muted-foreground">
-              <p className="text-lg leading-relaxed mb-8">
+              <p className="text-lg leading-relaxed mb-6">
                 Dans un environnement économique en constante évolution, les projets complexes nécessitent 
                 une approche juridique sophistiquée et une compréhension fine des enjeux technologiques 
                 et commerciaux.
               </p>
-              <p className="leading-relaxed mb-8">
-                Depuis bientôt 40 ans, BBLM Avocats rassemble des talents passionnés et expérimentés en droit des affaires qui se dédient à l'accompagnement de projets à fort enjeu stratégique, alliant expertise juridique pointue et vision business pragmatique.
-              </p>
               <p className="leading-relaxed">
-                Que vous développiez une innovation technologique, lanciez un réseau de franchise, 
-                ou pilotiez une transformation digitale d'envergure, nous mettons notre savoir-faire 
-                au service de votre réussite.
+                Depuis bientôt 40 ans, BBLM Avocats rassemble des talents passionnés et expérimentés en droit des affaires qui se dédient à l'accompagnement de projets à fort enjeu stratégique, alliant expertise juridique pointue et vision business pragmatique.
               </p>
             </div>
           </div>
         </section>
 
         {/* Atouts Grid */}
-        <section className="py-32 bg-gradient-to-b from-background to-background/95">
+        <section className="py-20 bg-gradient-to-b from-background to-background/95">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {atouts.map((atout, index) => (
@@ -123,4 +117,3 @@ const NosAtouts = () => {
 };
 
 export default NosAtouts;
-
