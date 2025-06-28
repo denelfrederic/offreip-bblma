@@ -22,6 +22,16 @@ const NosAtouts = () => {
       title: "Franchise & retail",
       description: "Expertise spécialisée pour les réseaux et enseignes commerciales.",
       href: "/nos-atouts/franchise-retail"
+    },
+    {
+      title: "Droit de la consommation",
+      description: "Accompagnement juridique pour la protection des consommateurs et la conformité réglementaire.",
+      href: "/nos-atouts/droit-consommation"
+    },
+    {
+      title: "Droit de la publicité",
+      description: "Conseil et accompagnement pour vos campagnes publicitaires et communications commerciales.",
+      href: "/nos-atouts/droit-publicite"
     }
   ];
 
@@ -70,7 +80,7 @@ const NosAtouts = () => {
         {/* Atouts Grid */}
         <section className="py-32 bg-gradient-to-b from-background to-background/95">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {atouts.map((atout, index) => (
                 <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
                   <CardHeader className="p-8">
