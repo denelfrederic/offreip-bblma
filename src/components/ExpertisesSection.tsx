@@ -8,37 +8,31 @@ const ExpertisesSection = () => {
     {
       title: "Propriété Intellectuelle",
       description: "Dépôts, surveillance, audit de portefeuilles et valorisation de vos actifs immatériels.",
-      icon: "🔒",
       color: "from-primary/20 to-primary/10"
     },
     {
       title: "RGPD & Cybersécurité",
       description: "Mise en conformité RGPD, audits de sécurité et accompagnement dans la gestion des données.",
-      icon: "🛡️",
       color: "from-blue-500/20 to-blue-500/10"
     },
     {
       title: "Contrats & Négociation",
       description: "Rédaction et négociation de contrats IT, licences et accords de confidentialité.",
-      icon: "📝",
       color: "from-green-500/20 to-green-500/10"
     },
     {
       title: "Litiges & Contentieux",
       description: "Résolution de conflits en propriété intellectuelle et accompagnement juridique.",
-      icon: "⚖️",
       color: "from-purple-500/20 to-purple-500/10"
     },
     {
       title: "Projets IT Complexes",
       description: "Accompagnement juridique des projets informatiques et transformation digitale.",
-      icon: "💻",
       color: "from-cyan-500/20 to-cyan-500/10"
     },
     {
       title: "Formation & Conseil",
       description: "Programmes de formation sur-mesure et conseil stratégique pour vos équipes.",
-      icon: "🎓",
       color: "from-orange-500/20 to-orange-500/10"
     }
   ];
@@ -68,9 +62,6 @@ const ExpertisesSection = () => {
               className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-500 hover:scale-105 group shadow-lg hover:shadow-2xl"
             >
               <CardHeader className="text-center pb-6">
-                <div className={`w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br ${expertise.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <span className="text-3xl">{expertise.icon}</span>
-                </div>
                 <CardTitle className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
                   {expertise.title}
                 </CardTitle>
