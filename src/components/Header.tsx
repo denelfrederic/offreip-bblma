@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Linkedin } from 'lucide-react';
@@ -8,10 +7,10 @@ const Header = () => {
 
   const navigation = [
     { name: 'ACCUEIL', href: '/' },
+    { name: 'ÉQUIPE', href: '/equipe' },
     { name: 'COMMENT TRAVAILLONS-NOUS ?', href: '/comment-travaillons-nous' },
     { name: 'SAVOIR-FAIRE', href: '/savoir-faire' },
     { name: 'NOS ATOUTS', href: '/nos-atouts' },
-    { name: 'ÉQUIPE', href: '/equipe' },
     { name: 'CONTACT', href: '/contact' },
   ];
 
