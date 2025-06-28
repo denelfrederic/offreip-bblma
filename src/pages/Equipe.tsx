@@ -82,9 +82,7 @@ const Equipe = () => {
                 Notre <span className="text-gradient">Équipe</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Le pôle Propriété Intellectuelle est composé d'un associé, deux avocats, 
-                une CPI (Conseil en Propriété Industrielle), et une équipe de quatre juristes 
-                intervenant en synergie avec les autres pôles.
+                Une équipe dédiée et spécialisée intervenant en synergie avec les autres pôles du cabinet BBLM Avocats sous notre équipe
               </p>
             </div>
           </div>
