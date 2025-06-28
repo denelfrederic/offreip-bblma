@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
@@ -48,10 +49,6 @@ const ExpertisesSection = () => {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
             Nos <span className="text-gradient">Expertises</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Une approche complète et spécialisée pour protéger et valoriser 
-            vos actifs immatériels dans l'économie numérique.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
