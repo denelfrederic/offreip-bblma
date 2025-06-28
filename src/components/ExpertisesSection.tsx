@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
@@ -45,12 +46,6 @@ const ExpertisesSection = () => {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
-            Nos <span className="text-gradient">Expertises</span>
-          </h2>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {expertises.map((expertise, index) => (
             <Card 
@@ -70,17 +65,10 @@ const ExpertisesSection = () => {
             </Card>
           ))}
         </div>
-
-        <div className="text-center mt-16">
-          <Link to="/savoir-faire">
-            <button className="bg-primary text-primary-foreground hover:bg-primary/90 px-12 py-6 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-              Voir tout notre savoir-faire
-            </button>
-          </Link>
-        </div>
       </div>
     </section>
   );
 };
 
 export default ExpertisesSection;
+
