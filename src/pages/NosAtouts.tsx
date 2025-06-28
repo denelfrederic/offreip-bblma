@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -75,9 +76,7 @@ const NosAtouts = () => {
                 et commerciaux.
               </p>
               <p className="leading-relaxed mb-8">
-                Notre cabinet s'est spécialisé dans l'accompagnement de projets à fort enjeu stratégique, 
-                alliant expertise juridique pointue et vision business pragmatique pour vous permettre 
-                de concrétiser vos ambitions en toute sécurité.
+                Depuis bientôt 40 ans, BBLM Avocats rassemble des talents passionnés et expérimentés en droit des affaires qui se dédient à l'accompagnement de projets à fort enjeu stratégique, alliant expertise juridique pointue et vision business pragmatique.
               </p>
               <p className="leading-relaxed">
                 Que vous développiez une innovation technologique, lanciez un réseau de franchise, 
@@ -124,3 +123,4 @@ const NosAtouts = () => {
 };
 
 export default NosAtouts;
+
