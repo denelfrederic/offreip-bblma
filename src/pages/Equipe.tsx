@@ -165,55 +165,6 @@ const Equipe = () => {
           </div>
         </section>
 
-        {/* Valeurs Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Nos <span className="text-primary">Valeurs</span>
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Ce qui nous guide au quotidien dans notre accompagnement de vos projets.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">🎯</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Excellence</h3>
-                <p className="text-gray-600">
-                  Nous visons l'excellence dans chaque mission, avec un niveau d'expertise 
-                  et de service à la hauteur de vos enjeux.
-                </p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">🤝</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Proximité</h3>
-                <p className="text-gray-600">
-                  Une relation de confiance basée sur l'écoute, la transparence 
-                  et un accompagnement personnalisé.
-                </p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl">⚡</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Innovation</h3>
-                <p className="text-gray-600">
-                  Toujours à la pointe des évolutions technologiques et réglementaires 
-                  pour mieux vous conseiller.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
