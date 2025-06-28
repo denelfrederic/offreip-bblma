@@ -81,21 +81,31 @@ const ContactSection = () => {
               <CardContent>
                 <div className="space-y-6 text-muted-foreground">
                   <div>
+                    <p className="font-semibold text-foreground mb-2">Marseille</p>
+                    <p>3, Place Félix Baret</p>
+                    <p>13286 Marseille Cedex 06</p>
+                    <p className="text-sm mt-1">
+                      <span className="font-medium">E :</span> marseille@bblma.eu<br />
+                      <span className="font-medium">T :</span> 04 91 33 54 56
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground mb-2">Aix-en-Provence</p>
+                    <p>34 cours Mirabeau</p>
+                    <p>13100 Aix-en-Provence</p>
+                    <p className="text-sm mt-1">
+                      <span className="font-medium">E :</span> aix@bblma.eu
+                    </p>
+                  </div>
+                  
+                  <div>
                     <p className="font-semibold text-foreground mb-2">Paris</p>
-                    <p>19 rue de Courcelles</p>
-                    <p>75008 Paris</p>
-                  </div>
-                  
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Lyon</p>
-                    <p>10-12 rue André Bonin</p>
-                    <p>69004 Lyon</p>
-                  </div>
-                  
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Nice</p>
-                    <p>23 avenue Thiers</p>
-                    <p>06000 Nice</p>
+                    <p>4, rue Cambon</p>
+                    <p>75001 Paris</p>
+                    <p className="text-sm mt-1">
+                      <span className="font-medium">E :</span> paris@bblma.eu
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -116,23 +126,6 @@ const ContactSection = () => {
                     9h00 - 18h00
                   </p>
                 </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-primary/10 backdrop-blur-sm border-primary/20">
-              <CardHeader>
-                <CardTitle className="text-xl font-bold text-foreground">
-                  Consultation d'urgence
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Besoin d'un conseil juridique urgent ? 
-                  Notre équipe est disponible pour les situations critiques.
-                </p>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Urgence juridique
-                </Button>
               </CardContent>
             </Card>
           </div>
