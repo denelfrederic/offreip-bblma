@@ -18,6 +18,15 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Contenu principal */}
           <div>
+            {/* Logo BBLM Avocats */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/273d56e3-01a5-4b73-8eb8-cd3debae106b.png" 
+                alt="BBLM Avocats" 
+                className="h-16 lg:h-20 w-auto"
+              />
+            </div>
+            
             <div className="mb-12">
               <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-tight">
                 Brand
