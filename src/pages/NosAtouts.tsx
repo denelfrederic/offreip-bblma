@@ -22,11 +22,6 @@ const NosAtouts = () => {
       title: "Franchise & retail",
       description: "Expertise spécialisée pour les réseaux et enseignes commerciales.",
       href: "/nos-atouts/franchise-retail"
-    },
-    {
-      title: "Programme de formations",
-      description: "Formation sur-mesure de vos équipes aux enjeux PI et IT.",
-      href: "/nos-atouts/formations"
     }
   ];
 
@@ -98,73 +93,6 @@ const NosAtouts = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Pourquoi nous choisir */}
-        <section className="py-32 bg-gradient-to-b from-background/95 to-background">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="text-center mb-20">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
-                Pourquoi nous <span className="text-gradient">choisir</span> ?
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <div className="text-center p-6">
-                <h3 className="text-xl font-bold text-foreground mb-6">Expertise technique</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Maîtrise approfondie des technologies et des enjeux juridiques spécifiques 
-                  à chaque secteur d'activité.
-                </p>
-              </div>
-              
-              <div className="text-center p-6">
-                <h3 className="text-xl font-bold text-foreground mb-6">Réactivité</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Équipe dédiée et processus optimisés pour répondre rapidement 
-                  aux urgences et aux échéances critiques.
-                </p>
-              </div>
-              
-              <div className="text-center p-6">
-                <h3 className="text-xl font-bold text-foreground mb-6">Approche partenariale</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Relation de confiance durable et accompagnement personnalisé 
-                  tout au long de vos projets.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-32 bg-gradient-to-b from-background to-background/95">
-          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
-              Un projet <span className="text-gradient">complexe</span> en vue ?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-              Échangeons sur vos défis et découvrons ensemble comment notre expertise 
-              peut vous aider à les relever avec succès.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-5 text-lg font-semibold rounded-full"
-                asChild
-              >
-                <Link to="/contact">Discuter de votre projet</Link>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-5 text-lg font-semibold rounded-full"
-                asChild
-              >
-                <Link to="/equipe">Rencontrer l'équipe</Link>
-              </Button>
             </div>
           </div>
         </section>
