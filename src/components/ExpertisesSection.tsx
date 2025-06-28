@@ -6,7 +6,7 @@ const ExpertisesSection = () => {
   const expertises = [
     {
       title: "Propriété Intellectuelle",
-      description: "Dépôts, surveillance, audit de portefeuilles et valorisation de vos actifs immatériels.",
+      description: "Gestion de portefeuille de marques, dessins et modèles en France et à l'international. Recherche d'antériorités, dépôt et procédure d'examen, représentation devant les offices compétents, inscription, surveillance, renouvellement en France et à l'international.",
       color: "from-primary/20 to-primary/10"
     },
     {
