@@ -133,10 +133,10 @@ const SavoirFaire = () => {
         <section className="py-12 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none text-gray-600">
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-xl leading-relaxed mb-6">
                 La propriété intellectuelle constitue aujourd'hui un levier stratégique majeur pour les entreprises souhaitant se différencier, innover et créer de la valeur dans un environnement économique de plus en plus concurrentiel.
               </p>
-              <p className="leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 Notre équipe pluridisciplinaire maîtrise l'ensemble des problématiques liées à la propriété intellectuelle et aux nouvelles technologies, du conseil stratégique à la résolution de litiges, en passant par l'accompagnement dans les opérations de croissance externe et les négociations contractuelles complexes.
               </p>
             </div>
@@ -150,12 +150,12 @@ const SavoirFaire = () => {
               {services.map((service, index) => (
                 <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">
+                    <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
                       {service.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-base leading-relaxed">
                       {service.description}
                     </p>
                     <Button 
@@ -180,7 +180,7 @@ const SavoirFaire = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Notre <span className="text-primary">méthode</span>
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Un processus structuré en 6 étapes pour une approche complète et efficace.
               </p>
             </div>
@@ -190,19 +190,19 @@ const SavoirFaire = () => {
                 <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 group">
                   <CardHeader className="pb-3">
                     <div className="mb-3">
-                      <div className="text-sm text-primary font-semibold">Étape {index + 1}</div>
-                      <CardTitle className="text-xl text-gray-900 group-hover:text-primary transition-colors">
+                      <div className="text-base text-primary font-semibold">Étape {index + 1}</div>
+                      <CardTitle className="text-2xl text-gray-900 group-hover:text-primary transition-colors">
                         {etape.title}
                       </CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
+                    <p className="text-gray-600 mb-4 leading-relaxed text-lg">
                       {etape.description}
                     </p>
                     <ul className="space-y-2">
                       {etape.details.map((detail, detailIndex) => (
-                        <li key={detailIndex} className="flex items-center text-sm text-gray-600">
+                        <li key={detailIndex} className="flex items-center text-base text-gray-600">
                           <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></span>
                           {detail}
                         </li>

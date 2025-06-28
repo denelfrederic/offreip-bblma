@@ -57,7 +57,7 @@ const ExpertisesSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-center leading-relaxed text-2xl">
+                <p className="text-muted-foreground text-center leading-relaxed text-xl">
                   {expertise.description}
                 </p>
               </CardContent>
