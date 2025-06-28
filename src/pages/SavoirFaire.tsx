@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -82,15 +83,6 @@ const SavoirFaire = () => {
         {/* Services Grid */}
         <section className="py-24 bg-gradient-to-b from-background to-background/95">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                Nos <span className="text-gradient">Services</span>
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Une expertise complète pour tous vos besoins en propriété intellectuelle et nouvelles technologies.
-              </p>
-            </div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
                 <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
@@ -124,3 +116,4 @@ const SavoirFaire = () => {
 };
 
 export default SavoirFaire;
+
