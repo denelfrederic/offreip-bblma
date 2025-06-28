@@ -48,11 +48,11 @@ const Equipe = () => {
       image: "https://www.bblma.com/wp-content/uploads/2020/11/Lise-MARTIN-200x300.jpg"
     },
     {
-      name: "Margaux EMPINET",
+      name: "Sirine ISSAAAD",
       title: "Juriste Marque",
-      specialties: "Propriété intellectuelle, Contentieux",
-      description: "Spécialisée dans le contentieux de propriété intellectuelle, elle défend les intérêts des clients dans leurs litiges et négociations.",
-      image: "https://www.bblma.com/wp-content/uploads/2020/11/Margaux-EMPINET-200x300.jpg"
+      specialties: "Marques, Propriété intellectuelle",
+      description: "Juriste spécialisée en marques et propriété intellectuelle, elle accompagne les entreprises dans la protection et la gestion de leurs droits de marque.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/default-avatar-200x300.jpg"
     },
     {
       name: "Mariam KADA",
