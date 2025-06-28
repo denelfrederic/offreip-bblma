@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -60,7 +58,7 @@ const SavoirFaire = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
-                Nos <span className="text-gradient">Expertises</span>
+                Nos <span className="text-gradient">Expertises IP/IT</span>
               </h1>
             </div>
           </div>
@@ -116,4 +114,3 @@ const SavoirFaire = () => {
 };
 
 export default SavoirFaire;
-
