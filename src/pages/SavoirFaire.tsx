@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -108,24 +107,22 @@ const SavoirFaire = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Header />
       <main className="pt-16 lg:pt-20">
         {/* Hero Section */}
-        <section className="hero-gradient py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
-                Nos <span className="text-gradient">Expertises IP/IT</span>
-              </h1>
-            </div>
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Nos <span className="text-primary">Expertises IP/IT</span>
+            </h1>
           </div>
         </section>
 
         {/* Introduction - Texte raccourci */}
-        <section className="py-16 bg-gradient-to-b from-background/95 to-background">
+        <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="prose prose-lg max-w-none text-muted-foreground">
+            <div className="prose prose-lg max-w-none text-gray-600">
               <p className="text-lg leading-relaxed mb-6">
                 La propriété intellectuelle constitue aujourd'hui un levier stratégique majeur pour les entreprises souhaitant se différencier, innover et créer de la valeur dans un environnement économique de plus en plus concurrentiel.
               </p>
@@ -137,24 +134,24 @@ const SavoirFaire = () => {
         </section>
 
         {/* Services Grid */}
-        <section className="py-24 bg-gradient-to-b from-background to-background/95">
+        <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
-                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
+                <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
                   <CardHeader className="pb-4">
-                    <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                    <CardTitle className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">
                       {service.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p className="text-muted-foreground text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed">
                       {service.description}
                     </p>
                     <Button 
                       size="sm" 
                       variant="outline" 
-                      className="w-full border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
+                      className="w-full border-primary/20 text-primary hover:bg-primary hover:text-white"
                       asChild
                     >
                       <Link to={service.href}>En savoir plus</Link>
@@ -167,35 +164,35 @@ const SavoirFaire = () => {
         </section>
 
         {/* Notre Méthode Section */}
-        <section className="py-24 bg-gradient-to-b from-background/95 to-background">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                Notre <span className="text-gradient">méthode</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                Notre <span className="text-primary">méthode</span>
               </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Un processus structuré en 6 étapes pour une approche complète et efficace.
               </p>
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {etapes.map((etape, index) => (
-                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
+                <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 group">
                   <CardHeader>
                     <div className="mb-4">
                       <div className="text-sm text-primary font-semibold">Étape {index + 1}</div>
-                      <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
+                      <CardTitle className="text-xl text-gray-900 group-hover:text-primary transition-colors">
                         {etape.title}
                       </CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                    <p className="text-gray-600 mb-6 leading-relaxed">
                       {etape.description}
                     </p>
                     <ul className="space-y-2">
                       {etape.details.map((detail, detailIndex) => (
-                        <li key={detailIndex} className="flex items-center text-sm text-muted-foreground">
+                        <li key={detailIndex} className="flex items-center text-sm text-gray-600">
                           <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></span>
                           {detail}
                         </li>
