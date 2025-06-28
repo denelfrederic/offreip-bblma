@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -52,6 +53,11 @@ const NosAtouts = () => {
         <section className="hero-gradient py-16">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
             <div className="text-center">
+              <img 
+                src="/lovable-uploads/393ca4ad-8bcb-4fe8-8188-c55ef5962863.png" 
+                alt="Brand Factory" 
+                className="h-20 mx-auto mb-8"
+              />
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-12">
                 La complémentatrité des différentes <span className="text-gradient">expertises</span> du cabinet BBLM Avocats nous permet de vous accompagner sur des projets complexes
               </h1>
