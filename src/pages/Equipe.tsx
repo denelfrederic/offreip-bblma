@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -27,11 +28,18 @@ const Equipe = () => {
       linkedinUrl: "https://www.linkedin.com/in/sophie-b-7203624b/"
     },
     {
-      name: "Carla RUFFINO",
-      title: "Conseil",
-      specialties: "Propriété industrielle, Innovation",
-      description: "Conseil en propriété industrielle, elle accompagne les entreprises innovantes dans la protection de leurs créations et inventions.",
-      image: "https://www.bblma.com/wp-content/uploads/2020/11/Carla-RUFFINO-200x300.jpg"
+      name: "Flore MARCHADOUR",
+      title: "Avocat",
+      specialties: "Propriété intellectuelle, Droit des sociétés",
+      description: "Avocate spécialisée en propriété intellectuelle et droit des sociétés, elle conseille les entreprises dans leurs stratégies juridiques et leur développement.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/default-avatar-200x300.jpg"
+    },
+    {
+      name: "Hugo SIBARITA",
+      title: "Juriste Marque",
+      specialties: "Marques, Propriété industrielle",
+      description: "Juriste spécialisé en marques et propriété industrielle, il accompagne les clients dans leurs démarches de protection et de valorisation de leurs actifs de marque.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/default-avatar-200x300.jpg"
     },
     {
       name: "Lise MARTIN",
