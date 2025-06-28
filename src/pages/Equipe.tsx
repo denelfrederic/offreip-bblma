@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -13,7 +14,7 @@ const Equipe = () => {
       title: "Avocat Associé",
       specialties: "Propriété intellectuelle, Contrats",
       description: "Experte en propriété intellectuelle avec une solide expérience dans l'accompagnement des entreprises pour la protection et la valorisation de leurs actifs immatériels.",
-      image: "https://www.bblma.com/wp-content/uploads/2020/11/Myriam-ANGELIER-200x300.jpg",
+      image: "https://www.bblma.com/wp-content/uploads/2023/06/Myriam-ANGELIER-768x768.webp",
       contactUrl: "https://www.bblma.com/equipe/myriam-angelier/",
       linkedinUrl: "https://www.linkedin.com/in/myriam-angelier-59408a19/"
     },
