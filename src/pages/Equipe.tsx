@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -10,32 +9,46 @@ import { Linkedin, Mail } from 'lucide-react';
 const Equipe = () => {
   const equipe = [
     {
-      name: "Marie Dubois",
-      title: "Associée - Directrice",
+      name: "Myriam ANGELIER",
+      title: "Avocat Associé",
+      specialties: "Propriété intellectuelle, Contrats",
+      description: "Experte en propriété intellectuelle avec une solide expérience dans l'accompagnement des entreprises pour la protection et la valorisation de leurs actifs immatériels.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/Myriam-ANGELIER-200x300.jpg"
+    },
+    {
+      name: "Sophie BORNET",
+      title: "Avocat Counsel",
       specialties: "Propriété intellectuelle, RGPD",
-      description: "Expert en propriété intellectuelle depuis plus de 15 ans, Marie accompagne les entreprises dans la protection de leurs innovations et la mise en conformité RGPD.",
-      image: "/placeholder.svg"
+      description: "Spécialisée dans le conseil en propriété intellectuelle et la protection des données, elle accompagne les clients dans leurs projets de transformation digitale.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/Sophie-BORNET-200x300.jpg"
     },
     {
-      name: "Pierre Martin",
-      title: "Associé",
-      specialties: "Contentieux, Contrats IT",
-      description: "Spécialisé dans les contentieux de propriété intellectuelle et la négociation de contrats informatiques complexes.",
-      image: "/placeholder.svg"
+      name: "Carla RUFFINO",
+      title: "Conseil",
+      specialties: "Propriété industrielle, Innovation",
+      description: "Conseil en propriété industrielle, elle accompagne les entreprises innovantes dans la protection de leurs créations et inventions.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/Carla-RUFFINO-200x300.jpg"
     },
     {
-      name: "Sophie Laurent",
-      title: "Counsel",
-      specialties: "Cybersécurité, Data Protection", 
-      description: "Experte en cybersécurité et protection des données, Sophie conseille les entreprises dans leur transformation digitale sécurisée.",
-      image: "/placeholder.svg"
+      name: "Lise MARTIN",
+      title: "Conseil",
+      specialties: "Marques, Dessins et modèles",
+      description: "Experte en marques et dessins & modèles, elle conseille les entreprises dans leurs stratégies de protection et de défense de leurs droits.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/Lise-MARTIN-200x300.jpg"
     },
     {
-      name: "Thomas Bernard",
-      title: "Senior Associate",
-      specialties: "Brevets, Innovation",
-      description: "Ingénieur de formation, Thomas accompagne les entreprises technologiques dans la protection de leurs innovations et brevets.",
-      image: "/placeholder.svg"
+      name: "Margaux EMPINET",
+      title: "Conseil",
+      specialties: "Propriété intellectuelle, Contentieux",
+      description: "Spécialisée dans le contentieux de propriété intellectuelle, elle défend les intérêts des clients dans leurs litiges et négociations.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/Margaux-EMPINET-200x300.jpg"
+    },
+    {
+      name: "Mariam KADA",
+      title: "Équipe support et juridique",
+      specialties: "Support juridique, Administration",
+      description: "Membre de l'équipe support, elle assure le suivi administratif et juridique des dossiers avec rigueur et efficacité.",
+      image: "https://www.bblma.com/wp-content/uploads/2020/11/Mariam-KADA-200x300.jpg"
     }
   ];
 
@@ -51,8 +64,9 @@ const Equipe = () => {
                 Notre <span className="text-gradient">Équipe</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Des experts passionnés au service de vos projets, 
-                alliant expertise juridique pointue et vision business pragmatique.
+                Le pôle Propriété Intellectuelle est composé d'un associé, deux avocats, 
+                une CPI (Conseil en Propriété Industrielle), et une équipe de quatre juristes 
+                intervenant en synergie avec les autres pôles.
               </p>
             </div>
           </div>
@@ -61,7 +75,7 @@ const Equipe = () => {
         {/* Équipe Grid */}
         <section className="py-24 bg-gradient-to-b from-background/95 to-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
               {equipe.map((membre, index) => (
                 <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
                   <CardContent className="p-8">
