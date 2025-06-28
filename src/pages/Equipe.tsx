@@ -22,7 +22,8 @@ const Equipe = () => {
       title: "Avocat Counsel",
       specialties: "Propriété intellectuelle, RGPD",
       description: "Spécialisée dans le conseil en propriété intellectuelle et la protection des données, elle accompagne les clients dans leurs projets de transformation digitale.",
-      image: "https://www.bblma.com/wp-content/uploads/2020/11/Sophie-BORNET-200x300.jpg"
+      image: "https://www.bblma.com/wp-content/uploads/2023/06/Sophie-Bornet-768x768.jpg",
+      contactUrl: "https://www.bblma.com/equipe/sophie-bornet/"
     },
     {
       name: "Carla RUFFINO",
