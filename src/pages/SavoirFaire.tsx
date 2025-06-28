@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -80,7 +81,7 @@ const SavoirFaire = () => {
     },
     {
       title: "Mise en œuvre",
-      description: "Exécution rigoureuse des actions définies avec accompagnement continu.",
+      description: "Exécution des actions définies avec accompagnement continu.",
       details: [
         "Dépôts et formalités administratives",
         "Négociation et rédaction contractuelle",
@@ -221,3 +222,4 @@ const SavoirFaire = () => {
 };
 
 export default SavoirFaire;
+
