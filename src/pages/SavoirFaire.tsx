@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -46,6 +47,63 @@ const SavoirFaire = () => {
       title: "Litiges & contentieux",
       description: "Résolution de conflits et défense de vos intérêts en justice.",
       href: "/savoir-faire/litiges-contentieux"
+    }
+  ];
+
+  const etapes = [
+    {
+      title: "Étude préliminaire",
+      description: "Analyse de votre contexte et de vos besoins spécifiques pour définir la stratégie optimale.",
+      details: [
+        "Audit de votre situation actuelle",
+        "Identification des enjeux prioritaires",
+        "Définition des objectifs stratégiques"
+      ]
+    },
+    {
+      title: "Audit approfondi",
+      description: "Diagnostic complet de vos actifs immatériels et de votre niveau de protection.",
+      details: [
+        "Cartographie de vos actifs",
+        "Analyse des risques et opportunités",
+        "Évaluation de la conformité réglementaire"
+      ]
+    },
+    {
+      title: "Plan d'action personnalisé",
+      description: "Élaboration d'une feuille de route sur-mesure avec priorités et échéances.",
+      details: [
+        "Stratégie de protection adaptée",
+        "Planning de mise en œuvre détaillé",
+        "Budget prévisionnel transparent"
+      ]
+    },
+    {
+      title: "Mise en œuvre",
+      description: "Exécution rigoureuse des actions définies avec accompagnement continu.",
+      details: [
+        "Dépôts et formalités administratives",
+        "Négociation et rédaction contractuelle",
+        "Formation de vos équipes"
+      ]
+    },
+    {
+      title: "Suivi et optimisation",
+      description: "Surveillance active et ajustements réguliers pour maximiser la protection.",
+      details: [
+        "Veille concurrentielle et technologique",
+        "Renouvellements et maintenances",
+        "Reporting périodique détaillé"
+      ]
+    },
+    {
+      title: "Accompagnement long terme",
+      description: "Relation de confiance durable pour faire évoluer votre stratégie PI.",
+      details: [
+        "Conseil stratégique continu",
+        "Adaptation aux évolutions réglementaires",
+        "Support réactif en cas d'urgence"
+      ]
     }
   ];
 
@@ -101,6 +159,48 @@ const SavoirFaire = () => {
                     >
                       <Link to={service.href}>En savoir plus</Link>
                     </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Notre Méthode Section */}
+        <section className="py-24 bg-gradient-to-b from-background/95 to-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                Notre <span className="text-gradient">méthode</span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Un processus structuré en 6 étapes pour une approche complète et efficace.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {etapes.map((etape, index) => (
+                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
+                  <CardHeader>
+                    <div className="mb-4">
+                      <div className="text-sm text-primary font-semibold">Étape {index + 1}</div>
+                      <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
+                        {etape.title}
+                      </CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      {etape.description}
+                    </p>
+                    <ul className="space-y-2">
+                      {etape.details.map((detail, detailIndex) => (
+                        <li key={detailIndex} className="flex items-center text-sm text-muted-foreground">
+                          <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></span>
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
                   </CardContent>
                 </Card>
               ))}
