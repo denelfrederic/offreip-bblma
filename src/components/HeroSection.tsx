@@ -14,19 +14,19 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 right-0 w-3/4 h-1/2 bg-gradient-to-tl from-muted/20 to-transparent rounded-tl-[200px]"></div>
       </div>
       
+      {/* Logo BBLM Avocats en haut à droite */}
+      <div className="absolute top-8 right-8 z-20">
+        <img 
+          src="/lovable-uploads/273d56e3-01a5-4b73-8eb8-cd3debae106b.png" 
+          alt="BBLM Avocats" 
+          className="h-12 lg:h-16 w-auto"
+        />
+      </div>
+      
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Contenu principal */}
           <div>
-            {/* Logo BBLM Avocats */}
-            <div className="mb-8">
-              <img 
-                src="/lovable-uploads/273d56e3-01a5-4b73-8eb8-cd3debae106b.png" 
-                alt="BBLM Avocats" 
-                className="h-16 lg:h-20 w-auto"
-              />
-            </div>
-            
             <div className="mb-12">
               <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-tight">
                 Brand
