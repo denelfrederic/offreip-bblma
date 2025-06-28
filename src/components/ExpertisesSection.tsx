@@ -21,7 +21,7 @@ const ExpertisesSection = () => {
     },
     {
       title: "Litiges & Contentieux",
-      description: "Résolution de conflits en propriété intellectuelle et accompagnement juridique.",
+      description: "Précontentieux de la propriété intellectuelle, assistance, expertise en matière de saisie-contrefaçon, procédures d'urgence, défense des actifs sur Internet.",
       color: "from-purple-500/20 to-purple-500/10"
     },
     {
