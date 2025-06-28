@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
@@ -58,7 +57,7 @@ const ExpertisesSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-center leading-relaxed text-lg">
+                <p className="text-muted-foreground text-center leading-relaxed text-xl">
                   {expertise.description}
                 </p>
               </CardContent>
@@ -71,4 +70,3 @@ const ExpertisesSection = () => {
 };
 
 export default ExpertisesSection;
-
