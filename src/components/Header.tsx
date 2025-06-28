@@ -1,9 +1,12 @@
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Linkedin } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const navigation = [
     { name: 'ACCUEIL', href: '/' },
@@ -18,19 +21,21 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-20 lg:h-24">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/273d56e3-01a5-4b73-8eb8-cd3debae106b.png" 
-                alt="BBLM Avocats" 
-                className="h-10 lg:h-12 w-auto"
-              />
-            </Link>
-          </div>
+          {/* Logo - affiché seulement si on n'est pas sur la page d'accueil */}
+          {!isHomePage && (
+            <div className="flex-shrink-0">
+              <Link to="/" className="flex items-center">
+                <img 
+                  src="/lovable-uploads/273d56e3-01a5-4b73-8eb8-cd3debae106b.png" 
+                  alt="BBLM Avocats" 
+                  className="h-10 lg:h-12 w-auto"
+                />
+              </Link>
+            </div>
+          )}
 
           {/* Navigation desktop */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className={`hidden lg:flex items-center space-x-8 ${isHomePage ? 'flex-1 justify-center' : ''}`}>
             {navigation.map((item) => (
               <Link
                 key={item.name}
