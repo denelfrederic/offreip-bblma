@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -172,12 +173,12 @@ const SavoirFaire = () => {
           </div>
         </section>
 
-        {/* Notre Méthode Section */}
+        {/* La méthode Brand Factory Section */}
         <section className="py-12 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                Notre <span className="text-primary">méthode</span>
+                La méthode <span className="text-primary">Brand Factory</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Un processus structuré en 6 étapes pour une approche complète et efficace.
