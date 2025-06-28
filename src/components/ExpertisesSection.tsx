@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
@@ -16,7 +15,7 @@ const ExpertisesSection = () => {
       color: "from-blue-500/20 to-blue-500/10"
     },
     {
-      title: "Contrats & Négociation",
+      title: "Contrats, Négociation et Valorisation",
       description: "Rédaction et négociation de contrats IT, licences et accords de confidentialité.",
       color: "from-green-500/20 to-green-500/10"
     },
