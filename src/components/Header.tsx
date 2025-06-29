@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Linkedin } from 'lucide-react';
@@ -11,7 +12,7 @@ const Header = () => {
     { name: 'ACCUEIL', href: '/' },
     { name: 'ÉQUIPE', href: '/equipe' },
     { name: 'ÉQUIPE', href: '/comment-travaillons-nous' },
-    { name: 'EXPERTISES IP/IT', href: '/savoir-faire' },
+    { name: 'VOS ENJEUX, NOTRE SAVOIR-FAIRE', href: '/savoir-faire' },
     { name: 'EXPERTISES COMPLÉMENTAIRES', href: '/nos-atouts' },
     { name: 'CONTACT', href: '/contact' },
   ];
