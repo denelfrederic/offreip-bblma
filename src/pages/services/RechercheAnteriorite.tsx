@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -56,7 +57,7 @@ const RechercheAnteriorite = () => {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-lg leading-relaxed mb-6">
-                Avant tout dépôt de marque, brevet ou dessin et modèle, des recherches d'antériorités approfondies 
+                Avant tout dépôt de marque ou dessin et modèle, des recherches d'antériorités approfondies 
                 s'avèrent indispensables pour évaluer les risques de contrefaçon et optimiser votre stratégie de protection.
               </p>
               <p className="leading-relaxed mb-6">
