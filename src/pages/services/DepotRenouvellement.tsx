@@ -43,7 +43,7 @@ const DepotRenouvellement = () => {
                 Dépôt & <span className="text-gradient">Renouvellement</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Gestion complète de vos portefeuilles de marques et brevets, 
+                Gestion complète de vos portefeuilles de marques, 
                 du dépôt initial aux renouvellements stratégiques.
               </p>
             </div>
