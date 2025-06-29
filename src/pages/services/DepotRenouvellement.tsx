@@ -1,11 +1,10 @@
-
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { FileCheck, RefreshCw, Globe, Calendar } from 'lucide-react';
+import { FileCheck, RefreshCw, Calendar } from 'lucide-react';
 
 const DepotRenouvellement = () => {
   const services = [
@@ -13,11 +12,6 @@ const DepotRenouvellement = () => {
       icon: <FileCheck className="h-8 w-8 text-primary" />,
       title: "Dépôts de marques",
       description: "Constitution et dépôt de vos dossiers de marques auprès des offices nationaux et internationaux."
-    },
-    {
-      icon: <Globe className="h-8 w-8 text-primary" />,
-      title: "Brevets d'invention",
-      description: "Rédaction et dépôt de brevets, stratégie de protection internationale via PCT."
     },
     {
       icon: <RefreshCw className="h-8 w-8 text-primary" />,
