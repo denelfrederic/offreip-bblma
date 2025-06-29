@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -58,8 +59,7 @@ const DepotRenouvellement = () => {
                 nécessitent une expertise technique pointue et une vision stratégique à long terme.
               </p>
               <p className="leading-relaxed mb-6">
-                Notre équipe vous accompagne dans toutes les étapes, depuis l'analyse de brevetabilité 
-                jusqu'à la gestion des renouvellements, en optimisant vos coûts et en maximisant 
+                Notre équipe vous accompagne dans toutes les étapes en optimisant vos coûts et en maximisant 
                 la valeur de vos actifs immatériels.
               </p>
             </div>
