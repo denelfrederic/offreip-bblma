@@ -133,35 +133,6 @@ const Surveillance = () => {
             </div>
           </div>
         </section>
-
-        {/* CTA Section */}
-        <section className="py-24 bg-gradient-to-b from-background to-background/95">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Protégez vos <span className="text-gradient">droits</span> en continu
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Mettez en place un système de surveillance adapté à vos besoins spécifiques.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-full"
-                asChild
-              >
-                <Link to="/contact">Demander une surveillance</Link>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg font-semibold rounded-full"
-                asChild
-              >
-                <Link to="/savoir-faire">Retour aux services</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
