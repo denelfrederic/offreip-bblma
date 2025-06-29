@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -63,7 +62,7 @@ const RechercheAnteriorite = () => {
               <p className="leading-relaxed mb-6">
                 Notre équipe d'experts réalise des analyses documentaires complètes dans les bases de données 
                 nationales et internationales, vous permettant de prendre des décisions éclairées et de 
-                sécuriser vos investissements en innovation.
+                sécuriser vos investissements.
               </p>
             </div>
           </div>
