@@ -111,9 +111,18 @@ const SavoirFaire = () => {
       <Header />
       <main className="pt-16 lg:pt-20">
         {/* Hero Section */}
-        <section className="py-12 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            {/* Logo */}
+        <section className="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+          {/* Fond avec effet de profondeur et formes géométriques */}
+          <div className="absolute inset-0 bg-gradient-to-br from-background/50 to-background/80"></div>
+          
+          {/* Formes géométriques inspirées du design */}
+          <div className="absolute top-0 right-0 w-1/2 h-full">
+            <div className="absolute top-0 right-0 w-full h-2/3 bg-gradient-to-bl from-muted/30 to-transparent rounded-bl-[300px]"></div>
+            <div className="absolute bottom-1/4 right-0 w-3/4 h-1/2 bg-gradient-to-tl from-muted/20 to-transparent rounded-tl-[200px]"></div>
+          </div>
+          
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            {/* Brand Factory Title */}
             <div className="mb-8">
               <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-tight">
                 Brand
@@ -122,9 +131,9 @@ const SavoirFaire = () => {
               </h1>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Nos <span className="text-primary">Expertises IP/IT</span>
-            </h1>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Nos <span className="text-gradient">Expertises IP/IT</span>
+            </h2>
           </div>
         </section>
 
