@@ -14,12 +14,11 @@ const Contact = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Logo Brand Factory centré */}
             <div className="flex justify-center mb-8">
-              <div className="h-12 flex items-center justify-center">
-                <span className="text-3xl font-bold">
-                  <span className="text-white">Brand</span>
-                  <span className="text-yellow-400"> Factory</span>
-                </span>
-              </div>
+              <img 
+                src="/lovable-uploads/96ac745a-06d4-4215-ac4e-f695fb8db5d0.png" 
+                alt="Brand Factory Logo" 
+                className="h-12 w-auto"
+              />
             </div>
             
             <div className="text-center">
