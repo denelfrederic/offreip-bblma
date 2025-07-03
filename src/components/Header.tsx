@@ -24,7 +24,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/fd4554f5-b537-46f5-b157-fde2a7145bda.png" 
+                src="/lovable-uploads/37b14711-3c5b-4f9d-a4c3-8af66eba27c0.png" 
                 alt="BBLM Avocats" 
                 className="h-10 lg:h-12 w-auto"
               />

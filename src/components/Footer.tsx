@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Logo et description */}
           <div className="lg:col-span-2">
             <img 
-              src="/lovable-uploads/273d56e3-01a5-4b73-8eb8-cd3debae106b.png" 
+              src="/lovable-uploads/37b14711-3c5b-4f9d-a4c3-8af66eba27c0.png" 
               alt="BBLM Avocats" 
               className="h-10 w-auto mb-4"
             />
