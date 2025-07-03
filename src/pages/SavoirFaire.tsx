@@ -80,10 +80,9 @@ const SavoirFaire = () => {
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {/* Brand Factory Title */}
             <div className="mb-8">
-              <h1 className="text-6xl sm:text-7xl font-bold text-foreground mb-8 leading-tight lg:text-6xl">
-                Brand
-                <br />
-                <span className="text-gradient sm:text-8xl lg:text-9xl text-7xl">Factory</span>
+              <h1 className="text-8xl sm:text-9xl lg:text-[12rem] font-bold leading-none">
+                <div className="text-white">Brand</div>
+                <div className="text-yellow-400 -mt-4">Factory</div>
               </h1>
             </div>
             
