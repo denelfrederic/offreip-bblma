@@ -12,14 +12,6 @@ const Contact = () => {
         {/* Hero Section */}
         <section className="py-24 relative bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Logo Brand Factory centré */}
-            <div className="flex justify-center mb-8">
-              <img 
-                src="/lovable-uploads/1f0b482f-4ef0-49fc-bd04-507fcd224bcf.png" 
-                alt="BBLM Avocats" 
-                className="h-12 w-auto"
-              />
-            </div>
             
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
