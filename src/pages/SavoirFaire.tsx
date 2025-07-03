@@ -6,9 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 const SavoirFaire = () => {
-  React.useEffect(() => {
-    document.title = 'Expertises IP/IT';
-  }, []);
   const services = [
     {
       title: "Recherches d'antériorités",

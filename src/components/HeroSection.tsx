@@ -19,7 +19,7 @@ const HeroSection = () => {
         <img 
           src="/lovable-uploads/273d56e3-01a5-4b73-8eb8-cd3debae106b.png" 
           alt="BBLM Avocats" 
-          className="h-12 lg:h-16 w-auto mix-blend-mode-multiply"
+          className="h-12 lg:h-16 w-auto"
         />
       </div>
       
