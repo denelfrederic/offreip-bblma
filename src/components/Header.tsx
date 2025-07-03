@@ -13,7 +13,6 @@ const Header = () => {
     { name: 'ÉQUIPE', href: '/equipe' },
     { name: 'EXPERTISES IP/IT', href: '/savoir-faire' },
     { name: 'EXPERTISES COMPLÉMENTAIRES', href: '/nos-atouts' },
-    { name: 'CONTACT', href: '/contact' },
   ];
 
   return (
