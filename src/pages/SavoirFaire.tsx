@@ -4,110 +4,66 @@ import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
 const SavoirFaire = () => {
-  const services = [
-    {
-      title: "Recherches d'antériorités",
-      description: "Analyses préalables approfondies pour sécuriser vos innovations.",
-      href: "/savoir-faire/recherche-anteriorite"
-    },
-    {
-      title: "Dépôt & renouvellement",
-      description: "Gestion complète de vos portefeuilles de marques et brevets.",
-      href: "/savoir-faire/depot-renouvellement"
-    },
-    {
-      title: "Surveillance",
-      description: "Veille active pour protéger vos droits contre les contrefaçons.",
-      href: "/savoir-faire/surveillance"
-    },
-    {
-      title: "Audit de portefeuilles",
-      description: "Évaluation stratégique et optimisation de vos actifs PI.",
-      href: "/savoir-faire/audit-portefeuilles"
-    },
-    {
-      title: "RGPD",
-      description: "Mise en conformité et accompagnement dans la protection des données.",
-      href: "/savoir-faire/rgpd"
-    },
-    {
-      title: "Cybersécurité",
-      description: "Conseil juridique pour la sécurisation de vos systèmes d'information.",
-      href: "/savoir-faire/cybersecurite"
-    },
-    {
-      title: "Contrats",
-      description: "Rédaction et négociation d'accords IT et de licences.",
-      href: "/savoir-faire/contrats"
-    },
-    {
-      title: "Litiges & contentieux",
-      description: "Résolution de conflits et défense de vos intérêts en justice.",
-      href: "/savoir-faire/litiges-contentieux"
-    }
-  ];
-
-  const etapes = [
-    {
-      title: "Étude préliminaire",
-      description: "Analyse de votre contexte et de vos besoins spécifiques pour définir la stratégie optimale.",
-      details: [
-        "Audit de votre situation actuelle",
-        "Identification des enjeux prioritaires",
-        "Définition des objectifs stratégiques"
-      ]
-    },
-    {
-      title: "Audit approfondi",
-      description: "Diagnostic complet de vos actifs immatériels et de votre niveau de protection.",
-      details: [
-        "Cartographie de vos actifs",
-        "Analyse des risques et opportunités",
-        "Évaluation de la conformité réglementaire"
-      ]
-    },
-    {
-      title: "Plan d'action personnalisé",
-      description: "Élaboration d'une feuille de route sur-mesure avec priorités et échéances.",
-      details: [
-        "Stratégie de protection adaptée",
-        "Planning de mise en œuvre détaillé",
-        "Budget prévisionnel transparent"
-      ]
-    },
-    {
-      title: "Mise en œuvre",
-      description: "Exécution des actions définies avec accompagnement continu.",
-      details: [
-        "Dépôts et formalités administratives",
-        "Négociation et rédaction contractuelle",
-        "Intégration base de données Brand Factory"
-      ]
-    },
-    {
-      title: "Suivi et optimisation",
-      description: "Surveillance active et ajustements réguliers pour maximiser la protection.",
-      details: [
-        "Veille concurrentielle et technologique",
-        "Renouvellements et maintenances",
-        "Reporting périodique détaillé"
-      ]
-    },
-    {
-      title: "Accompagnement long terme",
-      description: "Relation de confiance durable pour faire évoluer votre stratégie PI.",
-      details: [
-        "Conseil stratégique continu",
-        "Adaptation aux évolutions réglementaires",
-        "Support réactif en cas d'urgence"
-      ]
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-white">
+  const services = [{
+    title: "Recherches d'antériorités",
+    description: "Analyses préalables approfondies pour sécuriser vos innovations.",
+    href: "/savoir-faire/recherche-anteriorite"
+  }, {
+    title: "Dépôt & renouvellement",
+    description: "Gestion complète de vos portefeuilles de marques et brevets.",
+    href: "/savoir-faire/depot-renouvellement"
+  }, {
+    title: "Surveillance",
+    description: "Veille active pour protéger vos droits contre les contrefaçons.",
+    href: "/savoir-faire/surveillance"
+  }, {
+    title: "Audit de portefeuilles",
+    description: "Évaluation stratégique et optimisation de vos actifs PI.",
+    href: "/savoir-faire/audit-portefeuilles"
+  }, {
+    title: "RGPD",
+    description: "Mise en conformité et accompagnement dans la protection des données.",
+    href: "/savoir-faire/rgpd"
+  }, {
+    title: "Cybersécurité",
+    description: "Conseil juridique pour la sécurisation de vos systèmes d'information.",
+    href: "/savoir-faire/cybersecurite"
+  }, {
+    title: "Contrats",
+    description: "Rédaction et négociation d'accords IT et de licences.",
+    href: "/savoir-faire/contrats"
+  }, {
+    title: "Litiges & contentieux",
+    description: "Résolution de conflits et défense de vos intérêts en justice.",
+    href: "/savoir-faire/litiges-contentieux"
+  }];
+  const etapes = [{
+    title: "Étude préliminaire",
+    description: "Analyse de votre contexte et de vos besoins spécifiques pour définir la stratégie optimale.",
+    details: ["Audit de votre situation actuelle", "Identification des enjeux prioritaires", "Définition des objectifs stratégiques"]
+  }, {
+    title: "Audit approfondi",
+    description: "Diagnostic complet de vos actifs immatériels et de votre niveau de protection.",
+    details: ["Cartographie de vos actifs", "Analyse des risques et opportunités", "Évaluation de la conformité réglementaire"]
+  }, {
+    title: "Plan d'action personnalisé",
+    description: "Élaboration d'une feuille de route sur-mesure avec priorités et échéances.",
+    details: ["Stratégie de protection adaptée", "Planning de mise en œuvre détaillé", "Budget prévisionnel transparent"]
+  }, {
+    title: "Mise en œuvre",
+    description: "Exécution des actions définies avec accompagnement continu.",
+    details: ["Dépôts et formalités administratives", "Négociation et rédaction contractuelle", "Intégration base de données Brand Factory"]
+  }, {
+    title: "Suivi et optimisation",
+    description: "Surveillance active et ajustements réguliers pour maximiser la protection.",
+    details: ["Veille concurrentielle et technologique", "Renouvellements et maintenances", "Reporting périodique détaillé"]
+  }, {
+    title: "Accompagnement long terme",
+    description: "Relation de confiance durable pour faire évoluer votre stratégie PI.",
+    details: ["Conseil stratégique continu", "Adaptation aux évolutions réglementaires", "Support réactif en cas d'urgence"]
+  }];
+  return <div className="min-h-screen bg-white">
       <Header />
       <main className="pt-16 lg:pt-20">
         {/* Hero Section */}
@@ -124,10 +80,10 @@ const SavoirFaire = () => {
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {/* Brand Factory Title */}
             <div className="mb-8">
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-tight">
+              <h1 className="text-6xl sm:text-7xl font-bold text-foreground mb-8 leading-tight lg:text-6xl">
                 Brand
                 <br />
-                <span className="text-gradient text-7xl sm:text-8xl lg:text-9xl">Factory</span>
+                <span className="text-gradient sm:text-8xl lg:text-9xl text-7xl">Factory</span>
               </h1>
             </div>
             
@@ -155,8 +111,7 @@ const SavoirFaire = () => {
         <section className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((service, index) => (
-                <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
+              {services.map((service, index) => <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
                   <CardHeader className="pb-3">
                     <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
                       {service.title}
@@ -166,17 +121,11 @@ const SavoirFaire = () => {
                     <p className="text-gray-600 text-base leading-relaxed">
                       {service.description}
                     </p>
-                    <Button 
-                      size="sm" 
-                      variant="outline" 
-                      className="w-full border-primary/20 text-primary hover:bg-primary hover:text-white"
-                      asChild
-                    >
+                    <Button size="sm" variant="outline" className="w-full border-primary/20 text-primary hover:bg-primary hover:text-white" asChild>
                       <Link to={service.href}>En savoir plus</Link>
                     </Button>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </section>
@@ -194,8 +143,7 @@ const SavoirFaire = () => {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {etapes.map((etape, index) => (
-                <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 group">
+              {etapes.map((etape, index) => <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 group">
                   <CardHeader className="pb-3">
                     <div className="mb-3">
                       <div className="text-base text-primary font-semibold">Étape {index + 1}</div>
@@ -209,23 +157,18 @@ const SavoirFaire = () => {
                       {etape.description}
                     </p>
                     <ul className="space-y-2">
-                      {etape.details.map((detail, detailIndex) => (
-                        <li key={detailIndex} className="flex items-center text-base text-gray-600">
+                      {etape.details.map((detail, detailIndex) => <li key={detailIndex} className="flex items-center text-base text-gray-600">
                           <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></span>
                           {detail}
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default SavoirFaire;
