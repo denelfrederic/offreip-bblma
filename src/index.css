@@ -3,47 +3,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Système de couleurs inspiré de BBLM */
+/* Système de couleurs utilisant le bleu uniforme */
 @layer base {
   :root {
-    --background: 215 35% 15%; /* Bleu marine foncé comme BBLM */
+    --background: 215 52% 25%; /* Bleu de l'image */
     --foreground: 0 0% 98%; /* Blanc pour le texte */
 
-    --card: 215 35% 18%;
+    --card: 215 52% 28%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 215 35% 15%;
+    --popover: 215 52% 25%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 37 100% 60%; /* Orange/doré BBLM */
-    --primary-foreground: 215 35% 15%;
+    --primary: 215 52% 35%; /* Variation plus claire du bleu */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 215 25% 25%;
+    --secondary: 215 52% 30%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 215 25% 20%;
-    --muted-foreground: 215 15% 70%;
+    --muted: 215 52% 20%;
+    --muted-foreground: 215 30% 70%;
 
-    --accent: 37 100% 60%;
-    --accent-foreground: 215 35% 15%;
+    --accent: 215 52% 35%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 25% 25%;
-    --input: 215 25% 25%;
-    --ring: 37 100% 60%;
+    --border: 215 52% 30%;
+    --input: 215 52% 30%;
+    --ring: 215 52% 35%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 215 35% 12%;
+    --sidebar-background: 215 52% 22%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 37 100% 60%;
-    --sidebar-primary-foreground: 215 35% 15%;
-    --sidebar-accent: 215 25% 20%;
+    --sidebar-primary: 215 52% 35%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 52% 25%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 215 25% 25%;
-    --sidebar-ring: 37 100% 60%;
+    --sidebar-border: 215 52% 30%;
+    --sidebar-ring: 215 52% 35%;
   }
 }
 

@@ -10,11 +10,9 @@ const Header = () => {
 
   const navigation = [
     { name: 'ACCUEIL', href: '/' },
-    { name: 'EXPERTISES', href: '/savoir-faire' },
-    { name: 'CABINET', href: '/nos-atouts' },
     { name: 'ÉQUIPE', href: '/equipe' },
-    { name: 'ACTUALITÉS', href: '#' },
-    { name: 'CONTACT', href: '/contact' },
+    { name: 'Vos Enjeux Notre Savoir faire', href: '/savoir-faire' },
+    { name: 'EXPERTISES COMPLÉMENTAIRES', href: '/nos-atouts' },
   ];
 
   return (
