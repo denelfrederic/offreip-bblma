@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -79,7 +78,7 @@ const CommentTravaillonsNous = () => {
         </section>
 
         {/* Décideurs Magazine Recognition Section */}
-        <section className="py-12 bg-background/95">
+        <section className="py-12 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-center text-center">
               <img 
@@ -96,7 +95,7 @@ const CommentTravaillonsNous = () => {
         </section>
 
         {/* Nos Atouts Section */}
-        <section className="py-16 bg-gradient-to-b from-background/95 to-background">
+        <section className="py-16 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -124,7 +123,7 @@ const CommentTravaillonsNous = () => {
         </section>
 
         {/* Section Témoignages */}
-        <section className="py-16 bg-gradient-to-b from-background to-background/95">
+        <section className="py-16 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
