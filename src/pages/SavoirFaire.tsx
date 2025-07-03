@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -83,19 +82,14 @@ const SavoirFaire = () => {
           </div>
           
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
               Nos <span className="text-gradient">Expertises IP/IT</span>
             </h2>
-            
-            {/* Flèche vers le bas */}
-            <div className="animate-bounce">
-              <ArrowDown className="mx-auto text-yellow-400" size={48} strokeWidth={2} />
-            </div>
           </div>
         </section>
 
         {/* Introduction - Texte raccourci */}
-        <section className="py-12 bg-gray-50">
+        <section className="py-6 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none text-gray-600">
               <p className="text-xl leading-relaxed mb-6">
