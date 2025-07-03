@@ -80,9 +80,9 @@ const Footer = () => {
             <a href="https://www.bblma.com/mentions-legales/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               Mentions légales
             </a>
-            <Link to="/politique-confidentialite" className="hover:text-primary transition-colors">
+            <a href="https://www.bblma.com/politique-de-confidentialite/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               Politique de confidentialité
-            </Link>
+            </a>
           </div>
         </div>
       </div>
