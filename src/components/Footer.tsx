@@ -77,9 +77,9 @@ const Footer = () => {
             © {new Date().getFullYear()} BBLM Avocats. Tous droits réservés.
           </p>
           <div className="flex space-x-6 text-xs text-muted-foreground mt-4 sm:mt-0">
-            <Link to="/mentions-legales" className="hover:text-primary transition-colors">
+            <a href="https://www.bblma.com/mentions-legales/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               Mentions légales
-            </Link>
+            </a>
             <Link to="/politique-confidentialite" className="hover:text-primary transition-colors">
               Politique de confidentialité
             </Link>
