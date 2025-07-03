@@ -68,7 +68,7 @@ const SavoirFaire = () => {
       <Header />
       <main className="pt-16 lg:pt-20">
         {/* Hero Section */}
-        <section className="hero-gradient py-16 lg:py-24 flex flex-col items-center justify-center relative overflow-hidden">
+        <section className="hero-gradient pt-24 lg:pt-32 pb-16 lg:pb-24 flex flex-col items-center justify-center relative overflow-hidden">
           {/* Fond avec effet de profondeur et formes géométriques */}
           
           {/* Formes géométriques inspirées du design */}
