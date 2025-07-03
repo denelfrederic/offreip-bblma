@@ -11,8 +11,9 @@ const Header = () => {
   const navigation = [
     { name: 'ACCUEIL', href: '/' },
     { name: 'ÉQUIPE', href: '/equipe' },
-    { name: 'Vos Enjeux Notre Savoir faire', href: '/savoir-faire' },
+    { name: 'EXPERTISES IP/IT', href: '/savoir-faire' },
     { name: 'EXPERTISES COMPLÉMENTAIRES', href: '/nos-atouts' },
+    { name: 'CONTACT', href: '/contact' },
   ];
 
   return (
