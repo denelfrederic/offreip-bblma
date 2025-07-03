@@ -15,7 +15,7 @@ const Contact = () => {
             {/* Logo Brand Factory centré */}
             <div className="flex justify-center mb-8">
               <img 
-                src="/lovable-uploads/37b14711-3c5b-4f9d-a4c3-8af66eba27c0.png" 
+                src="/lovable-uploads/1f0b482f-4ef0-49fc-bd04-507fcd224bcf.png" 
                 alt="BBLM Avocats" 
                 className="h-12 w-auto"
               />
