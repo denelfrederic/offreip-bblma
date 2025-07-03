@@ -16,7 +16,7 @@ const Contact = () => {
             <div className="flex justify-center mb-8">
               <div className="h-12 flex items-center justify-center">
                 <span className="text-3xl font-bold">
-                  <span className="text-white">Brand</span>
+                  <span className="text-blue-600">Brand</span>
                   <span className="text-yellow-400"> Factory</span>
                 </span>
               </div>
