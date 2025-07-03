@@ -10,11 +10,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo et description */}
           <div className="lg:col-span-2">
-            <img 
-              src="/lovable-uploads/1f0b482f-4ef0-49fc-bd04-507fcd224bcf.png" 
-              alt="BBLM Avocats" 
-              className="h-10 w-auto mb-4"
-            />
             <p className="text-muted-foreground text-sm leading-relaxed max-w-md">
               Expert en propriété intellectuelle et nouvelles technologies.
               Nous accompagnons les entreprises dans la protection et la valorisation 
