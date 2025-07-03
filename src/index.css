@@ -6,7 +6,7 @@
 /* Système de couleurs inspiré de BBLM */
 @layer base {
   :root {
-    --background: 215 35% 15%; /* Bleu marine foncé comme BBLM */
+    --background: 213 53% 17%; /* #152544 */
     --foreground: 0 0% 98%; /* Blanc pour le texte */
 
     --card: 215 35% 18%;
