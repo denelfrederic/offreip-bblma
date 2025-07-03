@@ -48,13 +48,24 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h3 className="text-foreground font-semibold mb-4">Contact</h3>
-            <div className="space-y-2 text-sm text-muted-foreground">
-              <p>123 Avenue des Champs-Élysées</p>
-              <p>75008 Paris</p>
-              <p className="mt-4">
-                <span className="block">Tél : +33 (0)1 23 45 67 89</span>
-                <span className="block">Email : contact@bblma.com</span>
-              </p>
+            <div className="space-y-6 text-sm text-muted-foreground">
+              <div>
+                <p className="font-medium text-foreground">MARSEILLE</p>
+                <p>3, place Félix Baret - 13286 Marseille Cedex 06</p>
+                <p>E : marseille@bblma.eu - T : 04 91 33 54 56</p>
+              </div>
+              
+              <div>
+                <p className="font-medium text-foreground">AIX-EN-PROVENCE</p>
+                <p>34 cours Mirabeau - 13100 Aix-en-Provence</p>
+                <p>E : aix@bblma.eu</p>
+              </div>
+              
+              <div>
+                <p className="font-medium text-foreground">PARIS</p>
+                <p>4, rue Cambon - 75001 PARIS</p>
+                <p>E : paris@bblma.eu</p>
+              </div>
             </div>
           </div>
         </div>
