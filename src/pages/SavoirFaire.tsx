@@ -115,11 +115,11 @@ const SavoirFaire = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {/* Logo */}
             <div className="mb-8">
-              <img 
-                src="/lovable-uploads/b3a2e3c4-974b-41e6-869b-ad541300da99.png" 
-                alt="Brand Factory" 
-                className="h-16 lg:h-20 mx-auto"
-              />
+              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-tight">
+                Brand
+                <br />
+                <span className="text-gradient text-7xl sm:text-8xl lg:text-9xl">Factory</span>
+              </h1>
             </div>
             
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
