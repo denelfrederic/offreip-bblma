@@ -58,10 +58,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Flèche de scroll */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-8 w-8 text-primary" />
-      </div>
     </section>
   );
 };
