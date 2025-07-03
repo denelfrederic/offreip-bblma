@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -5,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowDown } from 'lucide-react';
+
 const SavoirFaire = () => {
   const services = [{
     title: "Recherches d'antériorités",
@@ -39,6 +41,7 @@ const SavoirFaire = () => {
     description: "Résolution de conflits et défense de vos intérêts en justice.",
     href: "/savoir-faire/litiges-contentieux"
   }];
+
   const etapes = [{
     title: "Étude préliminaire",
     description: "Analyse de votre contexte et de vos besoins spécifiques pour définir la stratégie optimale.",
@@ -64,7 +67,9 @@ const SavoirFaire = () => {
     description: "Relation de confiance durable pour faire évoluer votre stratégie PI.",
     details: ["Conseil stratégique continu", "Adaptation aux évolutions réglementaires", "Support réactif en cas d'urgence"]
   }];
-  return <div className="min-h-screen bg-white">
+
+  return (
+    <div className="min-h-screen bg-white">
       <Header />
       <main className="pt-16 lg:pt-20">
         {/* Hero Section */}
@@ -77,8 +82,7 @@ const SavoirFaire = () => {
             <div className="absolute bottom-1/4 right-0 w-3/4 h-1/2 bg-gradient-to-tl from-muted/20 to-transparent rounded-tl-[200px]"></div>
           </div>
           
-        
-            
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8">
               Nos <span className="text-gradient">Expertises IP/IT</span>
             </h2>
@@ -108,7 +112,8 @@ const SavoirFaire = () => {
         <section className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((service, index) => <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
+              {services.map((service, index) => (
+                <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
                   <CardHeader className="pb-3">
                     <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
                       {service.title}
@@ -122,7 +127,8 @@ const SavoirFaire = () => {
                       <Link to={service.href}>En savoir plus</Link>
                     </Button>
                   </CardContent>
-                </Card>)}
+                </Card>
+              ))}
             </div>
           </div>
         </section>
@@ -140,7 +146,8 @@ const SavoirFaire = () => {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {etapes.map((etape, index) => <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 group">
+              {etapes.map((etape, index) => (
+                <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 group">
                   <CardHeader className="pb-3">
                     <div className="mb-3">
                       <div className="text-base text-primary font-semibold">Étape {index + 1}</div>
@@ -154,18 +161,23 @@ const SavoirFaire = () => {
                       {etape.description}
                     </p>
                     <ul className="space-y-2">
-                      {etape.details.map((detail, detailIndex) => <li key={detailIndex} className="flex items-center text-base text-gray-600">
+                      {etape.details.map((detail, detailIndex) => (
+                        <li key={detailIndex} className="flex items-center text-base text-gray-600">
                           <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></span>
                           {detail}
-                        </li>)}
+                        </li>
+                      ))}
                     </ul>
                   </CardContent>
-                </Card>)}
+                </Card>
+              ))}
             </div>
           </div>
         </section>
       </main>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default SavoirFaire;
