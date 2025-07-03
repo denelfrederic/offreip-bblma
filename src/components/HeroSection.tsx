@@ -6,7 +6,6 @@ const HeroSection = () => {
   return (
     <section className="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Fond avec effet de profondeur et formes géométriques */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/50 to-background/80"></div>
       
       {/* Formes géométriques inspirées du design */}
       <div className="absolute top-0 right-0 w-1/2 h-full">
