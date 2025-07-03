@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { ArrowDown } from 'lucide-react';
 const SavoirFaire = () => {
   const services = [{
     title: "Recherches d'antériorités",
@@ -67,7 +68,7 @@ const SavoirFaire = () => {
       <Header />
       <main className="pt-16 lg:pt-20">
         {/* Hero Section */}
-        <section className="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <section className="hero-gradient py-16 lg:py-24 flex flex-col items-center justify-center relative overflow-hidden">
           {/* Fond avec effet de profondeur et formes géométriques */}
           <div className="absolute inset-0 bg-gradient-to-br from-background/50 to-background/80"></div>
           
@@ -87,9 +88,14 @@ const SavoirFaire = () => {
               </h1>
             </div>
             
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8">
               Nos <span className="text-gradient">Expertises IP/IT</span>
             </h2>
+            
+            {/* Flèche vers le bas */}
+            <div className="animate-bounce">
+              <ArrowDown className="mx-auto text-yellow-400" size={48} strokeWidth={2} />
+            </div>
           </div>
         </section>
 
