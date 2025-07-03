@@ -77,15 +77,7 @@ const SavoirFaire = () => {
             <div className="absolute bottom-1/4 right-0 w-3/4 h-1/2 bg-gradient-to-tl from-muted/20 to-transparent rounded-tl-[200px]"></div>
           </div>
           
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            {/* Brand Factory Title */}
-            <div className="mb-8">
-              <h1 className="text-6xl sm:text-7xl font-bold text-foreground mb-8 leading-tight lg:text-6xl text-left">
-                Brand
-                <br />
-                <span className="text-gradient sm:text-8xl lg:text-9xl text-7xl">Factory</span>
-              </h1>
-            </div>
+        
             
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8">
               Nos <span className="text-gradient">Expertises IP/IT</span>
