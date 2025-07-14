@@ -10,7 +10,7 @@ const Header = () => {
 
   const navigation = [
     { name: 'ÉQUIPE', href: '/equipe' },
-    { name: 'COMMENT TRAVAILLONS-NOUS', href: '/comment-travaillons-nous' },
+    { name: 'VOS ENJEUX\nNOTRE SAVOIR FAIRE', href: '/comment-travaillons-nous' },
     { name: 'EXPERTISES IP/IT', href: '/savoir-faire' },
     { name: 'EXPERTISES COMPLÉMENTAIRES', href: '/nos-atouts' },
   ];
@@ -22,8 +22,17 @@ const Header = () => {
           {/* Logo - affiché sur toutes les pages */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
+              {/* Logo Brand Factory à gauche */}
+              <img
+                src="/logobrandfactory-transparent.png"
+                alt="Brand Factory"
+                className="h-8 lg:h-10 w-auto"
+              />
+              {/* Texte BY entre les deux logos */}
+              <span className="mx-2 text-xs lg:text-sm font-semibold text-foreground/70 select-none">BY</span>
+              {/* Logo BBLM à droite */}
               <img 
-                src="/lovable-uploads/1f0b482f-4ef0-49fc-bd04-507fcd224bcf.png" 
+                src="/logobblmtransparent.png" 
                 alt="BBLM Avocats" 
                 className="h-10 lg:h-12 w-auto"
               />
@@ -36,9 +45,13 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className="nav-link text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="nav-link text-sm font-medium text-foreground hover:text-primary transition-colors text-center"
               >
-                {item.name}
+                {item.name.split('\n').map((line, index) => (
+                  <div key={index} className="leading-tight">
+                    {line}
+                  </div>
+                ))}
               </Link>
             ))}
           </nav>
@@ -46,7 +59,7 @@ const Header = () => {
           {/* Actions desktop */}
           <div className="hidden lg:flex items-center space-x-6">
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/company/bblmavocats/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-colors p-2"
@@ -80,10 +93,14 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                  className="block px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.name}
+                  {item.name.split('\n').map((line, index) => (
+                    <div key={index} className="leading-tight">
+                      {line}
+                    </div>
+                  ))}
                 </Link>
               ))}
               <div className="border-t border-border mt-6 pt-6">

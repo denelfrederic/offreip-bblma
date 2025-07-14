@@ -107,19 +107,29 @@ const SavoirFaire = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
-                <Card key={index} className="bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 hover:scale-105 group">
+                <Card
+                  key={index}
+                  className="flex flex-col h-full bg-white border-gray-200 hover:border-primary/50 transition-all duration-300 hover:scale-105 group"
+                >
                   <CardHeader className="pb-3">
                     <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
                       {service.title}
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-3">
-                    <p className="text-gray-600 text-base leading-relaxed">
+                  <CardContent className="flex flex-col flex-1 space-y-3">
+                    <p className="text-gray-600 text-base leading-relaxed flex-1">
                       {service.description}
                     </p>
-                    <Button size="sm" variant="outline" className="w-full border-primary/20 text-primary hover:bg-primary hover:text-white" asChild>
-                      <Link to={service.href}>En savoir plus</Link>
-                    </Button>
+                    <div className="mt-auto">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="w-full border-primary/20 text-primary hover:bg-primary hover:text-white"
+                        asChild
+                      >
+                        <Link to={service.href}>En savoir plus</Link>
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               ))}

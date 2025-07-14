@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Quote } from 'lucide-react';
+
 const CommentTravaillonsNous = () => {
   const atouts = [{
     title: "Une vision entrepreneuriale",
@@ -25,6 +26,7 @@ const CommentTravaillonsNous = () => {
     title: "Une gestion pragmatique pour maîtriser les coûts",
     description: "Optimisation du rapport coût-efficacité avec une approche transparente et prévisible des investissements."
   }];
+
   const temoignages = [{
     contenu: "Une vraie personne de confiance qui gère nos dossiers avec une main de maître. ne se pose plus de question, les dossiers sont suivis jusqu'au bout.",
     secteur: "CEO, Secteur Automobile"
@@ -38,14 +40,16 @@ const CommentTravaillonsNous = () => {
     contenu: "Nous accompagne toujours sur nos questions de dépôts et de création de marques en France et en Europe et sur tous les problèmes inhérents à ces sujets.",
     secteur: "Secteur Innovation"
   }];
-  return <div className="min-h-screen">
+
+  return (
+    <div className="min-h-screen">
       <Header />
       <main className="pt-16 lg:pt-20">
-        {/* Hero Section */}
-        <section className="hero-gradient py-16">
+        {/* Hero Section - Espacement réduit */}
+        <section className="hero-gradient py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4">
                 Vos enjeux, <span className="text-gradient">notre savoir-faire</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -55,11 +59,39 @@ const CommentTravaillonsNous = () => {
           </div>
         </section>
 
-        {/* Décideurs Magazine Recognition Section */}
+        {/* Nos Atouts Section - Espacement réduit et optimisé */}
         <section className="py-12 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
+                Nos <span className="text-gradient">atouts</span>
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {atouts.map((atout, index) => (
+                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-lg text-foreground group-hover:text-primary transition-colors">
+                      {atout.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <p className="text-muted-foreground leading-relaxed">
+                      {atout.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Décideurs Magazine Recognition Section - déplacé ici et logo doublé */}
+        <section className="py-8 bg-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-center text-center">
-              <img src="/lovable-uploads/2d39cafb-12a8-4d25-8d92-640a3b95b0b9.png" alt="Décideurs Magazine" className="h-16 mb-6" />
+              <img src="/lovable-uploads/2d39cafb-12a8-4d25-8d92-640a3b95b0b9.png" alt="Décideurs Magazine" className="h-32 mb-4" />
               <div className="text-2xl font-bold text-primary mb-2">2025</div>
               <p className="text-lg text-foreground font-semibold">
                 "Excellent" en gestion de portefeuilles de marques, dessins et modèles
@@ -68,37 +100,11 @@ const CommentTravaillonsNous = () => {
           </div>
         </section>
 
-        {/* Nos Atouts Section */}
-        <section className="py-16 bg-background">
+        {/* Section Témoignages - Espacement optimisé */}
+        <section className="py-12 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-                Nos <span className="text-gradient">atouts</span>
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              {atouts.map((atout, index) => <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 group">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-foreground group-hover:text-primary transition-colors">
-                      {atout.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {atout.description}
-                    </p>
-                  </CardContent>
-                </Card>)}
-            </div>
-          </div>
-        </section>
-
-        {/* Section Témoignages */}
-        <section className="py-16 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
                 Nos <span className="text-gradient">références</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -106,13 +112,14 @@ const CommentTravaillonsNous = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {temoignages.map((temoignage, index) => <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300">
-                  <CardContent className="p-8">
-                    <div className="flex items-start space-x-4">
-                      <Quote className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {temoignages.map((temoignage, index) => (
+                <Card key={index} className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-3">
+                      <Quote className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                       <div>
-                        <p className="text-muted-foreground leading-relaxed italic mb-4">
+                        <p className="text-muted-foreground leading-relaxed italic mb-3">
                           "{temoignage.contenu}"
                         </p>
                         <p className="text-sm font-medium text-primary">
@@ -121,12 +128,15 @@ const CommentTravaillonsNous = () => {
                       </div>
                     </div>
                   </CardContent>
-                </Card>)}
+                </Card>
+              ))}
             </div>
           </div>
         </section>
       </main>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default CommentTravaillonsNous;

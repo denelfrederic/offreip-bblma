@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-4 mt-6">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/bblmavocats/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -27,7 +27,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Navigation */}
+          {/* Section navigation supprimée pour retirer la navigation en bas */}
+          {/*
           <div>
             <h3 className="text-foreground font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2 text-sm">
@@ -39,6 +40,7 @@ const Footer = () => {
               <li><Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
+          */}
 
           {/* Contact */}
           <div>
