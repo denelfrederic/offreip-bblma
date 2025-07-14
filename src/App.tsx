@@ -11,6 +11,7 @@ import NosAtouts from "./pages/NosAtouts";
 import Equipe from "./pages/Equipe";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
 import RechercheAnteriorite from "./pages/services/RechercheAnteriorite";
 import DepotRenouvellement from "./pages/services/DepotRenouvellement";
 import Surveillance from "./pages/services/Surveillance";
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/nos-atouts" element={<NosAtouts />} />
           <Route path="/equipe" element={<Equipe />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

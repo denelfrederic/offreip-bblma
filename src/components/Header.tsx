@@ -58,6 +58,14 @@ const Header = () => {
 
           {/* Actions desktop */}
           <div className="hidden lg:flex items-center space-x-6">
+            {/* Bouton Espace Client : accès à la mire de connexion */}
+            {/* Bonne pratique : bouton secondaire, avant LinkedIn, pour distinguer l'accès client des autres actions */}
+            <Link
+              to="/login"
+              className="border border-primary text-primary px-6 py-2 rounded text-sm font-medium hover:bg-primary/10 transition-colors text-center"
+            >
+              Espace Client
+            </Link>
             <a 
               href="https://www.linkedin.com/company/bblmavocats/" 
               target="_blank" 
@@ -68,7 +76,7 @@ const Header = () => {
             </a>
             <Link
               to="/contact"
-              className="bg-primary text-primary-foreground px-6 py-3 rounded text-sm font-medium hover:bg-primary/90 transition-colors"
+              className="bg-primary text-primary-foreground px-6 py-3 rounded text-sm font-medium hover:bg-primary/90 transition-colors text-center"
             >
               Nous contacter
             </Link>
@@ -89,6 +97,15 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden bg-background border-t border-border">
             <div className="px-4 pt-4 pb-6 space-y-3">
+              {/* Ajout du bouton Espace Client dans le menu mobile pour cohérence UX */}
+              <Link
+                to="/login"
+                className="block px-4 py-3 text-base font-medium border border-primary text-primary rounded-md hover:bg-primary/10 transition-colors text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Espace Client
+              </Link>
+              {/* Navigation mobile */}
               {navigation.map((item) => (
                 <Link
                   key={item.name}
