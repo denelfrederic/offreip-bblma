@@ -12,22 +12,18 @@ const Surveillance = () => {
     {
       icon: <Eye className="h-8 w-8 text-primary" />,
       title: "Surveillance de marques",
-      description: "Détection précoce des dépôts et usages non autorisés de vos marques sur tous les territoires."
+      description: "Détection précoce des dépôts et usages non autorisés de vos marques sur les territoires pertinents."
     },
     {
       icon: <AlertTriangle className="h-8 w-8 text-primary" />,
       title: "Veille concurrentielle",
       description: "Monitoring des activités de vos concurrents et identification des opportunités stratégiques."
     },
-    {
-      icon: <Scale className="h-8 w-8 text-primary" />,
-      title: "Surveillance brevets",
-      description: "Suivi des publications et dépôts de brevets dans vos domaines d'activité."
-    },
+   
     {
       icon: <TrendingUp className="h-8 w-8 text-primary" />,
-      title: "Analyse technologique",
-      description: "Veille technologique approfondie pour anticiper les évolutions de marché."
+      title: "Surveillance de noms de domaines",
+      description: "Détection des usurpations de noms de domaines et des atteintes à vos droits."
     }
   ];
 

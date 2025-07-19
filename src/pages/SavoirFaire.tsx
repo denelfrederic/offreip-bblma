@@ -9,15 +9,15 @@ import { ArrowDown } from 'lucide-react';
 const SavoirFaire = () => {
   const services = [{
     title: "Recherches d'antériorités",
-    description: "Analyses préalables approfondies pour sécuriser vos innovations.",
+    description: "Analyses préalables approfondies pour sécuriser vos projets.",
     href: "/savoir-faire/recherche-anteriorite"
   }, {
-    title: "Dépôt & renouvellement",
-    description: "Gestion complète de vos portefeuilles de marques et brevets.",
+    title: "Dépôts & renouvellements",
+    description: "Gestion complète de vos portefeuilles de marques et dessins et modèles.",
     href: "/savoir-faire/depot-renouvellement"
   }, {
-    title: "Surveillance",
-    description: "Veille active pour protéger vos droits contre les contrefaçons.",
+    title: "Surveillances",
+    description: "Veille active pour protéger vos droits contre les contrefaçons et les usurpations.",
     href: "/savoir-faire/surveillance"
   }, {
     title: "Audit de portefeuilles",
@@ -28,8 +28,8 @@ const SavoirFaire = () => {
     description: "Mise en conformité et accompagnement dans la protection des données.",
     href: "/savoir-faire/rgpd"
   }, {
-    title: "Cybersécurité",
-    description: "Conseil juridique pour la sécurisation de vos systèmes d'information.",
+    title: "Sécurité numérique",
+    description: "Conseil juridique pour la sécurisation de vos systèmes d'informations et noms de domaines.",
     href: "/savoir-faire/cybersecurite"
   }, {
     title: "Contrats",
@@ -37,7 +37,7 @@ const SavoirFaire = () => {
     href: "/savoir-faire/contrats"
   }, {
     title: "Litiges & contentieux",
-    description: "Résolution de conflits et défense de vos intérêts en justice.",
+    description: "Résolution de conflits et défense de vos intérêts en justice / solution amiable / médiation.",
     href: "/savoir-faire/litiges-contentieux"
   }];
 

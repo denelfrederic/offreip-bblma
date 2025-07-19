@@ -19,7 +19,7 @@ const RechercheAnteriorite = () => {
     {
       icon: <Search className="h-8 w-8 text-primary" />,
       title: "Analyse du projet",
-      description: "Étude approfondie de votre innovation et définition des axes de recherche prioritaires."
+      description: "Étude approfondie de votre projet et définition des axes de recherche prioritaires."
     },
     {
       icon: <FileText className="h-8 w-8 text-primary" />,

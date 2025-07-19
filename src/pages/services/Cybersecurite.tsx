@@ -9,11 +9,7 @@ import { Lock, AlertTriangle, FileCheck, Users } from 'lucide-react';
 
 const Cybersecurite = () => {
   const services = [
-    {
-      icon: <Lock className="h-8 w-8 text-primary" />,
-      title: "Audit de sécurité",
-      description: "Évaluation complète de votre infrastructure et identification des vulnérabilités."
-    },
+   
     {
       icon: <FileCheck className="h-8 w-8 text-primary" />,
       title: "Politiques de sécurité",
@@ -40,10 +36,10 @@ const Cybersecurite = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
-                <span className="text-gradient">Cybersécurité</span> Juridique
+                <span className="text-gradient">Sécurité</span> Numérique
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Conseil juridique pour la sécurisation de vos systèmes d'information. 
+                Conseil juridique pour la sécurisation de vos systèmes d'informations. 
                 Anticipez les risques et protégez votre entreprise.
               </p>
             </div>
@@ -55,12 +51,12 @@ const Cybersecurite = () => {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-lg leading-relaxed mb-6">
-                Dans un contexte de digitalisation croissante, la cybersécurité devient un enjeu 
+                Dans un contexte de digitalisation croissante, la sécurité numérique devient un enjeu 
                 juridique majeur pour les entreprises. Les menaces informatiques peuvent entraîner 
                 des conséquences légales, financières et réputationnelles considérables.
               </p>
               <p className="leading-relaxed mb-6">
-                Notre expertise en droit de la cybersécurité vous accompagne dans la mise en place 
+                Notre expertise en droit de la sécurité numérique vous accompagne dans la mise en place 
                 d'un cadre juridique robuste, la gestion des incidents et la conformité aux 
                 réglementations en vigueur.
               </p>
@@ -73,10 +69,10 @@ const Cybersecurite = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                Nos services <span className="text-gradient">cybersécurité</span>
+                Nos services <span className="text-gradient">sécurité numérique</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Un encadrement juridique complet pour votre sécurité informatique.
+                Un encadrement juridique complet pour votre sécurité numérique.
               </p>
             </div>
 

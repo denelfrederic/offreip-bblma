@@ -11,8 +11,8 @@ const AuditPortefeuilles = () => {
   const objectifs = [
     {
       icon: <BarChart3 className="h-8 w-8 text-primary" />,
-      title: "Évaluation complète",
-      description: "Analyse exhaustive de la valeur et du potentiel de votre portefeuille PI."
+      title: "Évaluation",
+      description: "Analyse de la valeur juridique et du potentiel de votre portefeuille PI."
     },
     {
       icon: <Target className="h-8 w-8 text-primary" />,
